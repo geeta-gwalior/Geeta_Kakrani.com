@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Geeta Kakrani | Enterprise AI Projects</title>
+  <meta name="description" content="Real enterprise AI consulting case studies — RAG systems, agentic AI, LLM solutions with business outcomes, architecture, and tools used." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumb">Home / Case Studies</div>
+      <h1>Enterprise AI Case Studies</h1>
+      <p>Real production AI systems — with the problems they solved, the architecture behind them, and the business outcomes they delivered.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Case Study 1 -->
+      <div class="case-study-full reveal">
+        <div class="cs-full-header">
+          <div class="cs-industry">Financial Services · Banking</div>
+          <h3>Intelligent Document Processing & RAG for a Tier-1 Banking Institution</h3>
+          <div class="cs-full-metrics">
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">78%</div>
+              <div class="cs-full-metric-label">Faster document review</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">$2.4M</div>
+              <div class="cs-full-metric-label">Annual cost savings</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">94%</div>
+              <div class="cs-full-metric-label">Query accuracy</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">3 mo</div>
+              <div class="cs-full-metric-label">Time to production</div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-full-body">
+          <div class="cs-full-grid">
+            <div>
+              <div class="cs-section-title">Business Problem</div>
+              <h4>Manual Document Review at Scale</h4>
+              <p>A major banking institution processed 50,000+ financial documents monthly — loan agreements, compliance reports, and regulatory filings. Analysts spent 60% of their time manually searching through documents to answer compliance queries, leading to bottlenecks, errors, and high operational costs.</p>
+              <p>The bank needed a system that could ingest diverse document formats, understand financial context, and answer natural language queries with cited, auditable responses.</p>
+
+              <div class="cs-section-title" style="margin-top:24px;">Implementation Strategy</div>
+              <h4>Multi-Stage RAG Pipeline with Compliance-Grade Accuracy</h4>
+              <p>Designed a production RAG pipeline with document ingestion, multi-modal parsing (PDF, DOCX, scanned images via OCR), semantic chunking with overlap strategies, and hybrid search combining dense embeddings and BM25 keyword retrieval for maximum recall.</p>
+              <p>Built a custom re-ranking layer using cross-encoder models to prioritize the most relevant chunks, with a citation system that traces every answer back to its source document, page, and paragraph — critical for regulatory compliance.</p>
+            </div>
+            <div>
+              <div class="cs-section-title">Architecture Overview</div>
+              <div class="cs-arch-items">
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">📥</span>
+                  Document ingestion pipeline (PDFs, DOCX, scanned) via Unstructured.io
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🔢</span>
+                  Embeddings with text-embedding-004 + domain fine-tuning
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🗄️</span>
+                  PGVector on Cloud SQL for vector storage + metadata filtering
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🔍</span>
+                  Hybrid retrieval: dense + BM25 with RRF fusion
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🏆</span>
+                  Cross-encoder re-ranking with Cohere Rerank
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🧠</span>
+                  Gemini 1.5 Pro for answer generation with grounding
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🔗</span>
+                  LangChain orchestration + custom citation tracker
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">☁️</span>
+                  Deployed on Vertex AI + Cloud Run (auto-scaling)
+                </div>
+              </div>
+
+              <div class="cs-section-title" style="margin-top:24px;">Tools & Stack</div>
+              <div class="tag-cloud">
+                <span class="tag">LangChain</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Gemini 1.5 Pro</span>
+                <span class="tag">PGVector</span>
+                <span class="tag">Cohere Rerank</span>
+                <span class="tag">Cloud Run</span>
+                <span class="tag">Unstructured.io</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Python</span>
+                <span class="tag">BM25</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="case-study-full reveal">
+        <div class="cs-full-header">
+          <div class="cs-industry">Healthcare · Clinical Decision Support</div>
+          <h3>Agentic AI Assistant for Clinical Decision Support & Documentation</h3>
+          <div class="cs-full-metrics">
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">3.2×</div>
+              <div class="cs-full-metric-label">Faster clinical summaries</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">89%</div>
+              <div class="cs-full-metric-label">Physician satisfaction</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">40%</div>
+              <div class="cs-full-metric-label">Reduction in admin time</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">HIPAA</div>
+              <div class="cs-full-metric-label">Compliant architecture</div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-full-body">
+          <div class="cs-full-grid">
+            <div>
+              <div class="cs-section-title">Business Problem</div>
+              <h4>Clinical Documentation Burden Overwhelming Physicians</h4>
+              <p>A 500-bed hospital system found physicians spending 35–40% of their time on documentation and administrative tasks rather than patient care. Existing EHR tools were rigid and required manual synthesis of patient records, lab results, and clinical notes.</p>
+              <p>The challenge: build an AI assistant that could synthesize complex, multi-source clinical data with strict accuracy requirements, privacy compliance, and appropriate human oversight — where errors have life-or-death implications.</p>
+
+              <div class="cs-section-title" style="margin-top:24px;">Implementation Strategy</div>
+              <h4>Multi-Agent LangGraph System with Medical Literature Grounding</h4>
+              <p>Built a stateful multi-agent system using LangGraph where specialized agents handle different data sources: a Patient Record Agent synthesizes EHR data, a Lab Agent interprets diagnostic results, and a Literature Agent retrieves relevant medical research via PubMed RAG.</p>
+              <p>A Supervisor Agent orchestrates the workflow, aggregates outputs, and generates structured clinical summaries with evidence citations. Human-in-the-loop checkpoints allow physician review and correction before any summary enters patient records.</p>
+            </div>
+            <div>
+              <div class="cs-section-title">Architecture Overview</div>
+              <div class="cs-arch-items">
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🤖</span>
+                  LangGraph multi-agent graph (Supervisor + 4 specialist agents)
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🏥</span>
+                  HL7 FHIR integration for EHR data ingestion
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">📖</span>
+                  PubMed RAG pipeline for medical literature grounding
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🧠</span>
+                  Gemini 1.5 Pro with medical system prompts + safety filters
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🔒</span>
+                  De-identification pipeline (PHI removal before LLM calls)
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">👩‍⚕️</span>
+                  Human-in-the-loop review nodes with physician approval gates
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">📊</span>
+                  Full audit trail with LangSmith for compliance logging
+                </div>
+              </div>
+
+              <div class="cs-section-title" style="margin-top:24px;">Tools & Stack</div>
+              <div class="tag-cloud">
+                <span class="tag">LangGraph</span>
+                <span class="tag">Gemini 1.5 Pro</span>
+                <span class="tag">Weaviate</span>
+                <span class="tag">LangSmith</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">FHIR R4</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Cloud Healthcare API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="case-study-full reveal">
+        <div class="cs-full-header">
+          <div class="cs-industry">E-Commerce · Retail AI</div>
+          <h3>Open Source LLM-Powered Product Discovery & Personalization Engine</h3>
+          <div class="cs-full-metrics">
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">41%</div>
+              <div class="cs-full-metric-label">Conversion rate increase</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">68%</div>
+              <div class="cs-full-metric-label">Reduction in API costs</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">&lt;180ms</div>
+              <div class="cs-full-metric-label">P95 response latency</div>
+            </div>
+            <div class="cs-full-metric">
+              <div class="cs-full-metric-val">2M+</div>
+              <div class="cs-full-metric-label">Daily queries served</div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-full-body">
+          <div class="cs-full-grid">
+            <div>
+              <div class="cs-section-title">Business Problem</div>
+              <h4>Expensive Proprietary APIs at High Query Volume</h4>
+              <p>A fast-growing e-commerce platform was spending $80K+/month on OpenAI API calls for their product recommendation and search system. As query volume scaled to 2M+ daily, costs were becoming unsustainable, and latency was inconsistent due to third-party API dependencies.</p>
+              <p>Data privacy concerns from storing customer behavior in third-party APIs added compliance pressure. The team needed a private, cost-effective, and high-performance alternative.</p>
+
+              <div class="cs-section-title" style="margin-top:24px;">Implementation Strategy</div>
+              <h4>Fine-Tuned Llama 3 on Private Infrastructure with Semantic Search</h4>
+              <p>Designed and deployed a fine-tuned Llama 3 8B model on the company's private GCP infrastructure using vLLM for high-throughput serving. Created a domain-specific training dataset from 2 years of customer interaction logs and product catalog data.</p>
+              <p>Combined the fine-tuned LLM with a ChromaDB semantic search layer and a real-time user behavior graph. The result: personalized, conversational product discovery that runs entirely on private infrastructure at a fraction of the previous cost.</p>
+            </div>
+            <div>
+              <div class="cs-section-title">Architecture Overview</div>
+              <div class="cs-arch-items">
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🦙</span>
+                  Llama 3 8B fine-tuned with QLoRA on product + interaction data
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">⚡</span>
+                  vLLM serving with PagedAttention for high throughput
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">🔍</span>
+                  ChromaDB + custom embeddings for product semantic search
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">👤</span>
+                  User behavior graph for real-time personalization signals
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">⚙️</span>
+                  GGUF quantization (Q4_K_M) for memory efficiency
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">☁️</span>
+                  Kubernetes on GKE with GPU autoscaling
+                </div>
+                <div class="cs-arch-item">
+                  <span class="cs-arch-item-icon">📊</span>
+                  Prometheus + Grafana for LLM observability
+                </div>
+              </div>
+
+              <div class="cs-section-title" style="margin-top:24px;">Tools & Stack</div>
+              <div class="tag-cloud">
+                <span class="tag">Llama 3</span>
+                <span class="tag">vLLM</span>
+                <span class="tag">QLoRA</span>
+                <span class="tag">ChromaDB</span>
+                <span class="tag">GKE + GPUs</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Hugging Face</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <h2>Have a Similar Challenge?</h2>
+      <p>Let's talk about your AI use case. I'll share relevant experience and we'll figure out if there's a fit.</p>
+      <a href="../pages/contact.html" class="btn btn-lg" style="background:var(--white); color:var(--teal-700); font-weight:600; display:inline-flex;">Book a Free Discovery Call →</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

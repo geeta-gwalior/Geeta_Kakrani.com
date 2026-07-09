@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Geeta Kakrani | AI Tools, Frameworks & Reading Lists</title>
+  <meta name="description" content="Curated GenAI resources — tools, frameworks, papers, datasets, and learning paths recommended by Geeta Kakrani, Google Developer Expert in AI/ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumb">Home / Resources</div>
+      <h1>AI Resources & Tools</h1>
+      <p>Curated tools, frameworks, papers, and learning paths I personally use and recommend — updated regularly as the GenAI landscape evolves.</p>
+    </div>
+  </section>
+
+  <!-- ══ LLM FRAMEWORKS ══ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-label">Frameworks</div>
+      <h2 class="section-heading" style="margin-bottom:40px;">LLM & Agent Frameworks</h2>
+      <div class="grid-2" style="gap:16px; margin-bottom:64px;">
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">🔗</div>
+          <div class="resource-info">
+            <h4>LangChain</h4>
+            <p>The go-to framework for building LLM-powered applications. Best for sequential chains, retrieval pipelines, and tool-augmented agents. Large ecosystem, excellent documentation.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">RAG</span>
+            </div>
+            <a href="https://python.langchain.com" target="_blank" class="btn btn-secondary btn-sm">langchain.com →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info">
+            <h4>LangGraph</h4>
+            <p>Built on LangChain, LangGraph adds stateful graph-based orchestration — essential for multi-agent systems with branching logic, cycles, and human-in-the-loop workflows.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">Agents</span><span class="tag">Stateful</span><span class="tag">Multi-Agent</span>
+            </div>
+            <a href="https://langchain-ai.github.io/langgraph/" target="_blank" class="btn btn-secondary btn-sm">langgraph docs →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">🦙</div>
+          <div class="resource-info">
+            <h4>LlamaIndex</h4>
+            <p>Specialized in data indexing and retrieval for LLMs. Superior to LangChain for complex RAG use cases with structured data, SQL, and multi-document reasoning.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">RAG</span><span class="tag">Indexing</span><span class="tag">Python</span>
+            </div>
+            <a href="https://www.llamaindex.ai" target="_blank" class="btn btn-secondary btn-sm">llamaindex.ai →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">👥</div>
+          <div class="resource-info">
+            <h4>CrewAI</h4>
+            <p>Framework for orchestrating role-based AI agent teams. Intuitive API for defining agents with specific roles, tools, and collaboration patterns. Great for business process automation.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">Multi-Agent</span><span class="tag">Roles</span><span class="tag">Automation</span>
+            </div>
+            <a href="https://crewai.com" target="_blank" class="btn btn-secondary btn-sm">crewai.com →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">🔬</div>
+          <div class="resource-info">
+            <h4>DSPy</h4>
+            <p>Programmatic framework for optimizing LLM prompts and pipelines. If you're spending hours hand-writing prompts, DSPy can automatically optimize them against your metrics.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">Prompt Optimization</span><span class="tag">Stanford</span>
+            </div>
+            <a href="https://dspy-docs.vercel.app" target="_blank" class="btn btn-secondary btn-sm">dspy docs →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">💬</div>
+          <div class="resource-info">
+            <h4>Ollama</h4>
+            <p>The simplest way to run open-source LLMs locally. One command to download and run Llama, Mistral, Phi, Gemma and dozens more. Essential for private and cost-free development.</p>
+            <div class="tag-cloud" style="margin:10px 0;">
+              <span class="tag">Local LLMs</span><span class="tag">Open Source</span><span class="tag">Free</span>
+            </div>
+            <a href="https://ollama.com" target="_blank" class="btn btn-secondary btn-sm">ollama.com →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══ VECTOR DATABASES ══ -->
+      <div class="section-label">Vector Storage</div>
+      <h2 class="section-heading" style="margin-bottom:40px;">Vector Databases</h2>
+      <div class="grid-2" style="gap:16px; margin-bottom:64px;">
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">📌</div>
+          <div class="resource-info">
+            <h4>Pinecone</h4>
+            <p>Managed vector database — easiest to get started for production RAG. Serverless tier available. Best choice when you don't want to manage infrastructure.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Managed</span><span class="tag">Serverless</span><span class="tag">Production</span></div>
+            <a href="https://pinecone.io" target="_blank" class="btn btn-secondary btn-sm">pinecone.io →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">🧩</div>
+          <div class="resource-info">
+            <h4>Weaviate</h4>
+            <p>Open-source vector database with hybrid search built-in. Excellent for enterprise deployments needing both vector and keyword search without extra infrastructure.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Open Source</span><span class="tag">Hybrid Search</span></div>
+            <a href="https://weaviate.io" target="_blank" class="btn btn-secondary btn-sm">weaviate.io →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">🗄️</div>
+          <div class="resource-info">
+            <h4>PGVector</h4>
+            <p>Postgres extension adding vector search. If you already run Postgres, PGVector is the lowest-friction path to vector storage — no new database to manage.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Postgres</span><span class="tag">Self-hosted</span></div>
+            <a href="https://github.com/pgvector/pgvector" target="_blank" class="btn btn-secondary btn-sm">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">🎯</div>
+          <div class="resource-info">
+            <h4>ChromaDB</h4>
+            <p>Lightweight, developer-friendly vector database. Perfect for local development, prototyping, and small-scale RAG applications. Runs in-memory or persisted locally.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Lightweight</span><span class="tag">Dev-friendly</span></div>
+            <a href="https://www.trychroma.com" target="_blank" class="btn btn-secondary btn-sm">trychroma.com →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══ CLOUD PLATFORMS ══ -->
+      <div class="section-label">Cloud AI</div>
+      <h2 class="section-heading" style="margin-bottom:40px;">Cloud AI Platforms</h2>
+      <div class="grid-2" style="gap:16px; margin-bottom:64px;">
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">☁️</div>
+          <div class="resource-info">
+            <h4>Vertex AI — Google Cloud</h4>
+            <p>My primary recommendation for enterprise Google Cloud users. Full MLOps suite, Gemini API, Agent Builder, Model Garden, and excellent observability. GDE expertise here.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Google Cloud</span><span class="tag">Gemini</span><span class="tag">MLOps</span></div>
+            <a href="https://cloud.google.com/vertex-ai" target="_blank" class="btn btn-secondary btn-sm">cloud.google.com →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">🤗</div>
+          <div class="resource-info">
+            <h4>Hugging Face Hub</h4>
+            <p>The GitHub of AI models. Essential for accessing open-source LLMs, embeddings models, datasets, and community fine-tunes. Also hosts Spaces for demo deployments.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Models</span><span class="tag">Datasets</span><span class="tag">Open Source</span></div>
+            <a href="https://huggingface.co" target="_blank" class="btn btn-secondary btn-sm">huggingface.co →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══ EVALUATION TOOLS ══ -->
+      <div class="section-label">Evaluation & Observability</div>
+      <h2 class="section-heading" style="margin-bottom:40px;">LLM Evaluation & Monitoring</h2>
+      <div class="grid-2" style="gap:16px; margin-bottom:64px;">
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">📏</div>
+          <div class="resource-info">
+            <h4>RAGAS</h4>
+            <p>The standard evaluation framework for RAG systems. Measures faithfulness, answer relevancy, context recall, and precision automatically using LLM-as-judge methodology.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">RAG Eval</span><span class="tag">Metrics</span></div>
+            <a href="https://docs.ragas.io" target="_blank" class="btn btn-secondary btn-sm">ragas.io →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">🔭</div>
+          <div class="resource-info">
+            <h4>LangSmith</h4>
+            <p>LangChain's observability platform for debugging, testing, and monitoring LLM applications. Excellent tracing UI that makes it easy to see exactly what's happening in complex chains.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Observability</span><span class="tag">Tracing</span></div>
+            <a href="https://smith.langchain.com" target="_blank" class="btn btn-secondary btn-sm">langsmith →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal">
+          <div class="resource-icon">📊</div>
+          <div class="resource-info">
+            <h4>Weights & Biases (W&B)</h4>
+            <p>ML experiment tracking and LLM evaluation. Particularly useful for fine-tuning runs, prompt versioning, and team collaboration on model evaluation.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Experiment Tracking</span><span class="tag">Fine-tuning</span></div>
+            <a href="https://wandb.ai" target="_blank" class="btn btn-secondary btn-sm">wandb.ai →</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-icon">⚡</div>
+          <div class="resource-info">
+            <h4>vLLM</h4>
+            <p>High-throughput LLM serving engine. If you're deploying open-source models at scale, vLLM's PagedAttention delivers up to 24× higher throughput than naive Hugging Face serving.</p>
+            <div class="tag-cloud" style="margin:10px 0;"><span class="tag">Serving</span><span class="tag">Performance</span><span class="tag">Open Source</span></div>
+            <a href="https://vllm.ai" target="_blank" class="btn btn-secondary btn-sm">vllm.ai →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══ LEARNING PATHS ══ -->
+      <div class="section-label">Learning</div>
+      <h2 class="section-heading" style="margin-bottom:40px;">Recommended Learning Paths</h2>
+      <div class="grid-3" style="gap:24px;">
+
+        <div class="card reveal" style="border-top:3px solid var(--teal-500);">
+          <div style="font-size:2rem; margin-bottom:16px;">🌱</div>
+          <h4 style="font-family:var(--font-body); font-size:1rem; margin-bottom:12px;">GenAI Beginner Path</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-600);">1.</span> Fast.ai Practical Deep Learning
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-600);">2.</span> DeepLearning.AI GenAI Short Courses
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-600);">3.</span> LangChain Official Docs Walkthrough
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-600);">4.</span> Build a basic RAG app from scratch
+            </div>
+          </div>
+          <a href="../pages/tutorials.html" class="btn btn-outline btn-sm" style="margin-top:20px;">Start with Tutorials →</a>
+        </div>
+
+        <div class="card reveal reveal-delay-1" style="border-top:3px solid var(--amber-500);">
+          <div style="font-size:2rem; margin-bottom:16px;">⚡</div>
+          <h4 style="font-family:var(--font-body); font-size:1rem; margin-bottom:12px;">Intermediate: RAG & Agents</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--amber-500);">1.</span> LangGraph documentation + examples
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--amber-500);">2.</span> RAG from scratch (Greg Kamradt)
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--amber-500);">3.</span> RAGAS evaluation framework
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--amber-500);">4.</span> Build a multi-agent system end-to-end
+            </div>
+          </div>
+          <a href="../pages/tutorials.html" class="btn btn-outline btn-sm" style="margin-top:20px;">View Tutorials →</a>
+        </div>
+
+        <div class="card reveal reveal-delay-2" style="border-top:3px solid var(--teal-800);">
+          <div style="font-size:2rem; margin-bottom:16px;">🔴</div>
+          <h4 style="font-family:var(--font-body); font-size:1rem; margin-bottom:12px;">Advanced: Production AI</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-800);">1.</span> vLLM & inference optimization
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-800);">2.</span> QLoRA fine-tuning on custom data
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-800);">3.</span> LLM observability with LangSmith
+            </div>
+            <div style="font-size:0.82rem; color:var(--gray-600); display:flex; gap:8px;">
+              <span style="color:var(--teal-800);">4.</span> Kubernetes-based LLM serving at scale
+            </div>
+          </div>
+          <a href="../pages/contact.html" class="btn btn-outline btn-sm" style="margin-top:20px;">Book Mentorship →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <h2>Get Curated AI Resources Weekly</h2>
+      <p>New tools, papers, and tutorials — filtered for practical relevance. No hype, just what's actually useful for building AI systems.</p>
+      <form class="newsletter-form" novalidate>
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
