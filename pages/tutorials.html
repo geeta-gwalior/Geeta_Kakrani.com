@@ -34,186 +34,198 @@
 
       <div class="talks-filter-bar" id="tutorialFilters" style="margin-bottom:48px;">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="langchain">LangChain</button>
-        <button class="filter-btn" data-filter="langgraph">LangGraph</button>
-        <button class="filter-btn" data-filter="rag">RAG</button>
-        <button class="filter-btn" data-filter="vertex">Vertex AI</button>
-        <button class="filter-btn" data-filter="opensource">Open Source LLMs</button>
         <button class="filter-btn" data-filter="agents">Agentic AI</button>
+        <button class="filter-btn" data-filter="rag">RAG</button>
+        <button class="filter-btn" data-filter="gemma">Gemma</button>
+        <button class="filter-btn" data-filter="vertex">Vertex AI</button>
+        <button class="filter-btn" data-filter="opensource">Open Source</button>
+        <button class="filter-btn" data-filter="cost">Cost Optimization</button>
       </div>
 
-      <!-- Tutorial Cards Grid -->
+      <!-- Tutorial Cards Grid — real GitHub repos -->
       <div class="grid-3" id="tutorialGrid">
 
-        <div class="tutorial-card reveal" data-tutorial-cat="langgraph">
+        <!-- 1: Gemma RAG Coffee Shop Chatbot -->
+        <div class="tutorial-card reveal" data-tutorial-cat="rag gemma">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
-            <h4>Build a Multi-Agent Research System with LangGraph</h4>
+            <h4>Gemma with RAG — Coffee Shop Chatbot</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Step-by-step codelab to build a stateful multi-agent system that searches the web, synthesizes information, and produces structured research reports using LangGraph and Gemini.</p>
+            <p>Build an intelligent chatbot using Retrieval-Augmented Generation (RAG) with Gemma. Covers vector embeddings, document retrieval, and contextual response generation for a real use case.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">LangGraph</span>
-              <span class="tag">Gemini</span>
+              <span class="tag">Gemma</span>
+              <span class="tag">RAG</span>
               <span class="tag">Python</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 45 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">
-                GitHub →
-              </a>
+              <a href="https://github.com/geeta-gwalior/Gemma-with-RAG-A-Coffee-Shop-Chatbot" target="_blank" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
 
-        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="rag">
+        <!-- 2: Gemma Flutter Chatbot -->
+        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="gemma opensource">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
-            <h4>Production RAG with Hybrid Search & Re-Ranking</h4>
+            <h4>On-Device AI Chatbot with Flutter + Gemma + MediaPipe</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Build a production-grade RAG pipeline combining dense embeddings and BM25 keyword search with Cohere re-ranking. Includes RAGAS evaluation and latency benchmarking.</p>
+            <p>Build a fully offline AI chatbot that runs on your phone — no server needed. Uses Flutter, Google Gemma, and MediaPipe for completely private, on-device inference.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">RAG</span>
-              <span class="tag">LangChain</span>
-              <span class="tag">PGVector</span>
+              <span class="tag">Gemma</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">MediaPipe</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 60 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://github.com/geeta-gwalior/gemma-flutter-chatbot" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://geeta-gwalior.github.io/gemma-flutter-chatbot/#2" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
             </div>
           </div>
         </div>
 
-        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="vertex">
+        <!-- 3: Antigravity 2.0 Codelab -->
+        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="agents">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-beginner">🟢 Beginner</span>
-            <h4>Getting Started with Vertex AI & Gemini API</h4>
+            <h4>Antigravity 2.0 — Gamified Guide to Google's Agent Platform</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Your first Vertex AI application — set up Google Cloud, call the Gemini API, build a simple chat interface, and deploy to Cloud Run. Perfect starting point for Google Cloud AI.</p>
+            <p>Hands-on codelab walking through Google's Antigravity agent-first dev platform — Desktop App, CLI <code>agy</code>, and Python SDK with real examples and live demos.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">Vertex AI</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Cloud Run</span>
-            </div>
-            <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 30 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="tutorial-card reveal" data-tutorial-cat="langchain">
-          <div class="tutorial-card-header">
-            <span class="tutorial-level level-beginner">🟢 Beginner</span>
-            <h4>LangChain Fundamentals: Chains, Prompts & Memory</h4>
-          </div>
-          <div class="tutorial-card-body">
-            <p>A comprehensive introduction to LangChain — building chains, writing effective prompts, adding memory to conversations, and structuring LLM outputs with Pydantic.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">LangChain</span>
+              <span class="tag">Antigravity 2.0</span>
+              <span class="tag">Agentic AI</span>
               <span class="tag">Python</span>
-              <span class="tag">OpenAI</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 40 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://github.com/geeta-gwalior/Antigravity_2.0" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://geeta-gwalior.github.io/antigravity-2-genai-mcp-portfolio/#7" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
             </div>
           </div>
         </div>
 
-        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="opensource">
+        <!-- 4: AI Research Workflows with OpenClaw -->
+        <div class="tutorial-card reveal" data-tutorial-cat="agents opensource">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
-            <h4>Run Llama 3 Locally with Ollama + Build a RAG App</h4>
+            <h4>AI-Driven Research Workflows with OpenClaw</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Set up Ollama, run Llama 3 8B locally, connect it to LangChain, and build a document Q&A application — all on your own machine with zero API costs.</p>
+            <p>Set up OpenClaw with Docker and a local Ollama/Gemma model for fully on-device AI research automation. Ideal for teams processing sensitive data without cloud APIs.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">Llama 3</span>
+              <span class="tag">OpenClaw</span>
               <span class="tag">Ollama</span>
-              <span class="tag">ChromaDB</span>
+              <span class="tag">Gemma</span>
+              <span class="tag">Docker</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 50 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://github.com/geeta-gwalior/AI-Driven-Research-Workflows-with-OpenClaw" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://geeta-gwalior.github.io/AI-Driven-Research-Workflows-with-OpenClaw/#2" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
             </div>
           </div>
         </div>
 
-        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="agents">
+        <!-- 5: Reducing AI Costs Hybrid -->
+        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="cost vertex">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-advanced">🔴 Advanced</span>
-            <h4>Agentic AI with Tool Use: Building a Code Execution Agent</h4>
+            <h4>Reducing AI Costs via Hybrid Multi-Model Infrastructure</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Build an agent that writes Python code, executes it in a sandbox, interprets results, and iterates — complete with error handling, safety guardrails, and human approval flow.</p>
+            <p>Route low-complexity tasks to Gemma 3 (Vertex AI) and high-reasoning tasks to Gemini 2.5 Flash — a practical implementation of cost-efficient hybrid AI infrastructure.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">LangGraph</span>
-              <span class="tag">Tool Use</span>
+              <span class="tag">Gemma 3</span>
               <span class="tag">Gemini</span>
+              <span class="tag">Vertex AI</span>
+              <span class="tag">Cost Optimization</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 75 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://github.com/geeta-gwalior/Reducing-AI-Costs-via-Hybrid-Multi-Model-Infrastructure" target="_blank" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
 
-        <div class="tutorial-card reveal" data-tutorial-cat="rag">
+        <!-- 6: LexiMini Legal AI -->
+        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="vertex">
           <div class="tutorial-card-header">
             <span class="tutorial-level level-advanced">🔴 Advanced</span>
-            <h4>Evaluating RAG Pipelines with RAGAS Framework</h4>
+            <h4>LexiMini — AI Legal Assistant for India on TPU</h4>
           </div>
           <div class="tutorial-card-body">
-            <p>Build a complete RAG evaluation pipeline using RAGAS — measuring faithfulness, answer relevancy, context precision, and recall. Set up automated regression testing for your RAG system.</p>
+            <p>Build a domain-specific AI legal assistant trained on Indian law using Google TPUs. Covers dataset curation, fine-tuning, deployment, and accuracy challenges in a specialized domain.</p>
             <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">RAGAS</span>
-              <span class="tag">RAG</span>
-              <span class="tag">LangChain</span>
-            </div>
-            <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 55 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="vertex">
-          <div class="tutorial-card-header">
-            <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
-            <h4>Vertex AI Agent Builder: Deploy a Grounded Gemini Agent</h4>
-          </div>
-          <div class="tutorial-card-body">
-            <p>Use Vertex AI Agent Builder to create a production-ready conversational agent with Google Search grounding, custom data stores, and safety filters — no custom code required for the core.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">Vertex AI</span>
-              <span class="tag">Agent Builder</span>
-              <span class="tag">Gemini</span>
-            </div>
-            <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 35 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="opensource">
-          <div class="tutorial-card-header">
-            <span class="tutorial-level level-advanced">🔴 Advanced</span>
-            <h4>Fine-Tune Mistral 7B with QLoRA for Domain Adaptation</h4>
-          </div>
-          <div class="tutorial-card-body">
-            <p>Complete guide to fine-tuning Mistral 7B using QLoRA on a custom dataset — data preparation, training on a single GPU, evaluation, merging adapters, and serving with vLLM.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
-              <span class="tag">Mistral</span>
-              <span class="tag">QLoRA</span>
-              <span class="tag">vLLM</span>
+              <span class="tag">TPU</span>
+              <span class="tag">Fine-tuning</span>
+              <span class="tag">Legal AI</span>
             </div>
             <div class="tutorial-meta">
               <span class="tutorial-time">⏱ 90 min</span>
-              <a href="https://github.com/geeta-gwalior" target="_blank" class="tutorial-github">GitHub →</a>
+              <a href="https://github.com/geeta-gwalior/Leximini_AI" target="_blank" class="tutorial-github">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7: Analytica Agent -->
+        <div class="tutorial-card reveal" data-tutorial-cat="agents opensource">
+          <div class="tutorial-card-header">
+            <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
+            <h4>Analytica Agent — CSV to Dashboard with Gemma + Ollama</h4>
+          </div>
+          <div class="tutorial-card-body">
+            <p>A local GenAI agent that turns CSV files into interactive dashboards using Ollama and Gemma — keeping sensitive business data fully on-premises, no cloud required.</p>
+            <div class="tag-cloud" style="margin-bottom:16px;">
+              <span class="tag">Gemma</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+            <div class="tutorial-meta">
+              <span class="tutorial-time">⏱ 55 min</span>
+              <a href="https://github.com/geeta-gwalior/Analytica-Agent" target="_blank" class="tutorial-github">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8: Multi-Agent Gemini AI -->
+        <div class="tutorial-card reveal reveal-delay-1" data-tutorial-cat="agents">
+          <div class="tutorial-card-header">
+            <span class="tutorial-level level-intermediate">⚡ Intermediate</span>
+            <h4>Multi-Agent System with CrewAI + Gemini AI</h4>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Set up a collaborative multi-agent system using CrewAI and Gemini AI — with specialized agents for planning, research, writing, and review working in concert.</p>
+            <div class="tag-cloud" style="margin-bottom:16px;">
+              <span class="tag">CrewAI</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">Multi-Agent</span>
+            </div>
+            <div class="tutorial-meta">
+              <span class="tutorial-time">⏱ 45 min</span>
+              <a href="https://github.com/geeta-gwalior/MultiAgent_GeminiAi" target="_blank" class="tutorial-github">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9: NLP Tutorial for Beginners -->
+        <div class="tutorial-card reveal reveal-delay-2" data-tutorial-cat="opensource">
+          <div class="tutorial-card-header">
+            <span class="tutorial-level level-beginner">🟢 Beginner</span>
+            <h4>NLP Tutorial for Beginners</h4>
+          </div>
+          <div class="tutorial-card-body">
+            <p>A beginner-friendly introduction to Natural Language Processing — tokenization, embeddings, sentiment analysis, and text classification with real Python examples.</p>
+            <div class="tag-cloud" style="margin-bottom:16px;">
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Beginners</span>
+            </div>
+            <div class="tutorial-meta">
+              <span class="tutorial-time">⏱ 30 min</span>
+              <a href="https://github.com/geeta-gwalior/NLP_Tutorial" target="_blank" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>

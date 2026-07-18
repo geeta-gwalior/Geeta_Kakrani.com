@@ -442,23 +442,94 @@
   </section>
 
   <!-- ══════════════════════════════════════════
-       TESTIMONIALS
+       YOUTUBE VIDEOS
   ══════════════════════════════════════════ -->
-  <section class="section testimonials-section">
+  <section class="section" style="background:var(--gray-50);">
     <div class="container">
-      <div class="text-center">
-        <div class="section-label">Testimonials</div>
-        <h2 class="section-heading">What People Are Saying</h2>
-        <p class="section-intro">Verified recommendations from enterprise clients, community leaders, and event organizers — coming soon.</p>
+      <div class="flex-between" style="margin-bottom:48px; flex-wrap:wrap; gap:20px;">
+        <div>
+          <div class="section-label">Watch &amp; Learn</div>
+          <h2 class="section-heading">Videos &amp; Talks on YouTube</h2>
+          <p style="color:var(--gray-500); max-width:500px;">Live sessions, codelabs, and technical deep-dives — watch Geeta break down complex AI topics into clear, practical insights.</p>
+        </div>
+        <a href="https://www.youtube.com/@geetakakrani" target="_blank" class="btn btn-secondary">All Videos →</a>
       </div>
-      <div style="max-width:640px; margin:48px auto 0; text-align:center; padding:48px 40px; background:var(--gray-50); border:1.5px dashed var(--gray-300); border-radius:var(--radius-xl);">
-        <div style="font-size:2.5rem; margin-bottom:16px;">💬</div>
-        <h4 style="font-size:1.1rem; color:var(--gray-700); margin-bottom:12px;">Testimonials from Enterprise Clients &amp; Community Leaders coming soon</h4>
-        <p style="color:var(--gray-500); font-size:0.9rem; line-height:1.7;">Real recommendations are being collected from LinkedIn and direct collaborators. This section will be updated with verified testimonials only.</p>
-        <a href="https://linkedin.com/in/geetakakrani" target="_blank" class="btn btn-outline" style="margin-top:24px;">View LinkedIn Recommendations →</a>
+
+      <div class="grid-3">
+
+        <!-- Video 1: AI-Driven Research Workflows with OpenClaw -->
+        <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" class="yt-video-card reveal" style="text-decoration:none; display:block;">
+          <div class="yt-thumb-wrap">
+            <img src="https://i.ytimg.com/vi/fo4e_lK6_8s/hqdefault.jpg"
+                 alt="AI-Driven Research Workflows with OpenClaw"
+                 class="yt-thumb" />
+            <div class="yt-play-btn">▶</div>
+          </div>
+          <div class="yt-video-info">
+            <div class="yt-channel-tag">▶ youtube.com/@geetakakrani</div>
+            <h4 class="yt-video-title">AI-Driven Research Workflows with OpenClaw</h4>
+            <p class="yt-video-desc">Step-by-step guide to setting up OpenClaw with Docker and a local Ollama/Gemma model for AI-driven research automation.</p>
+          </div>
+        </a>
+
+        <!-- Video 2: How to Load Gemma from Hugging Face -->
+        <a href="https://www.youtube.com/watch?v=A0s3TYg2uoM" target="_blank" class="yt-video-card reveal reveal-delay-1" style="text-decoration:none; display:block;">
+          <div class="yt-thumb-wrap">
+            <img src="https://i.ytimg.com/vi/A0s3TYg2uoM/hqdefault.jpg"
+                 alt="How to Load Gemma from Hugging Face"
+                 class="yt-thumb" />
+            <div class="yt-play-btn">▶</div>
+          </div>
+          <div class="yt-video-info">
+            <div class="yt-channel-tag">▶ youtube.com/@geetakakrani</div>
+            <h4 class="yt-video-title">How to Load Gemma from Hugging Face | Open Source LLM Series</h4>
+            <p class="yt-video-desc">Episode 3 of the Open Source LLM series — loading Google Gemma directly from Hugging Face for local inference.</p>
+          </div>
+        </a>
+
+        <!-- Video 3: Data Science and Programming -->
+        <a href="https://www.youtube.com/watch?v=KISKXhUq6LY" target="_blank" class="yt-video-card reveal reveal-delay-2" style="text-decoration:none; display:block;">
+          <div class="yt-thumb-wrap">
+            <img src="https://i.ytimg.com/vi/KISKXhUq6LY/hqdefault.jpg"
+                 alt="Data Science and Programming"
+                 class="yt-thumb" />
+            <div class="yt-play-btn">▶</div>
+          </div>
+          <div class="yt-video-info">
+            <div class="yt-channel-tag">▶ youtube.com/@geetakakrani</div>
+            <h4 class="yt-video-title">Data Science and Programming</h4>
+            <p class="yt-video-desc">Practical data science and programming concepts explained clearly — building the foundation for modern AI development.</p>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
+
+  <style>
+    .yt-video-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .yt-video-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,0.13); }
+    .yt-thumb-wrap { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #0f172a; }
+    .yt-thumb { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+    .yt-video-card:hover .yt-thumb { transform: scale(1.04); }
+    .yt-play-btn {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      font-size: 2.4rem; color: #fff;
+      background: rgba(0,0,0,0.35);
+      opacity: 0; transition: opacity 0.2s ease;
+    }
+    .yt-video-card:hover .yt-play-btn { opacity: 1; }
+    .yt-video-info { padding: 20px; }
+    .yt-channel-tag { font-size: 0.72rem; color: var(--teal-600); font-weight: 600; letter-spacing: 0.03em; margin-bottom: 8px; }
+    .yt-video-title { font-size: 0.95rem; font-weight: 700; color: var(--gray-900); margin: 0 0 8px; line-height: 1.4; }
+    .yt-video-desc { font-size: 0.82rem; color: var(--gray-500); line-height: 1.6; margin: 0; }
+  </style>
 
   <!-- ══════════════════════════════════════════
        NEWSLETTER
