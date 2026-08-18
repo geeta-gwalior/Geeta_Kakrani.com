@@ -1,5 +1,5 @@
 /* ============================================
-   SHARED COMPONENTS
+   SHARED COMPONENTS — Premium Dark Theme
    Navbar + Footer injected on every page
    ============================================ */
 
@@ -8,21 +8,19 @@ const NAV_HTML = `
   <div class="nav-inner">
     <a href="../index.html" class="nav-logo" aria-label="Geeta Kakrani Home">
       <span class="nav-logo-name">Geeta Kakrani</span>
-      <span class="nav-logo-title">AI Consultant · GDE</span>
+      <span class="nav-logo-title">AI Educator · GDE</span>
     </a>
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="../pages/about.html">About</a>
-      <a href="../pages/services.html">Services</a>
-      <a href="../pages/case-studies.html">Case Studies</a>
+      <a href="../pages/projects.html">Projects</a>
       <a href="../pages/talks.html">Talks</a>
       <a href="../pages/tutorials.html">Tutorials</a>
       <a href="../pages/blog.html">Blog</a>
       <a href="../pages/media.html">Media</a>
-      <a href="../pages/resources.html">Resources</a>
     </div>
     <div class="nav-cta">
-      <a href="../pages/contact.html" class="btn btn-primary btn-sm">Book Consultation</a>
+      <a href="../index.html#whatsapp-join" class="btn btn-primary btn-sm">Join Community</a>
     </div>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -32,14 +30,12 @@ const NAV_HTML = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="../index.html">Home</a>
   <a href="../pages/about.html">About</a>
-  <a href="../pages/services.html">Services</a>
-  <a href="../pages/case-studies.html">Case Studies</a>
+  <a href="../pages/projects.html">Projects</a>
   <a href="../pages/talks.html">Talks</a>
   <a href="../pages/tutorials.html">Tutorials</a>
   <a href="../pages/blog.html">Blog</a>
   <a href="../pages/media.html">Media</a>
-  <a href="../pages/resources.html">Resources</a>
-  <a href="../pages/contact.html" style="color:var(--teal-600);font-weight:600;">Book Consultation →</a>
+  <a href="../index.html#whatsapp-join" style="color:var(--primary-teal);font-weight:600;">Join Community →</a>
 </nav>
 `;
 
@@ -50,46 +46,34 @@ const FOOTER_HTML = `
       <div class="footer-brand">
         <div>
           <div class="footer-logo-name">Geeta Kakrani</div>
-          <div class="footer-logo-title">AI Consultant · Enterprise AI Strategist · GDE</div>
+          <div class="footer-logo-title">AI Educator · GDE · Speaker</div>
         </div>
-        <p>Helping enterprises and startups build practical, scalable AI systems. From strategy to production-grade GenAI, LLM, and agentic architectures.</p>
+        <p>Founder of Kanishka IT. Sharing practical knowledge in AI/ML, coding tutorials, and open-source AI agents. Connect on GitHub, YouTube, LinkedIn, and Medium.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn">in</a>
-          <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub">gh</a>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" title="Medium">M</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Instagram">ig</a>
+          <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" title="Medium"><i class="bi bi-medium"></i></a>
+          <a href="https://twitter.com/geeta_kakrani" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.youtube.com/@geetakakrani" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
-        <a href="../pages/services.html">AI Strategy Consulting</a>
-        <a href="../pages/services.html">Agentic AI Systems</a>
-        <a href="../pages/services.html">Enterprise LLM Solutions</a>
-        <a href="../pages/services.html">RAG Pipelines</a>
-        <a href="../pages/services.html">Vertex AI Consulting</a>
-        <a href="../pages/services.html">AI Workshops</a>
+        <h4>Resources</h4>
+        <a href="../pages/projects.html">Projects &amp; Labs</a>
+        <a href="../pages/tutorials.html">Tutorials &amp; Codelabs</a>
+        <a href="../pages/blog.html">Blog Articles</a>
+        <a href="../pages/media.html">Media &amp; Videos</a>
       </div>
       <div class="footer-col">
-        <h4>Content</h4>
-        <a href="../pages/talks.html">Conference Talks</a>
-        <a href="../pages/tutorials.html">Tutorials</a>
-        <a href="../pages/blog.html">Blog</a>
-        <a href="../pages/media.html">Media</a>
-        <a href="../pages/case-studies.html">Case Studies</a>
-        <a href="../pages/resources.html">Resources</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="../pages/contact.html">Book a Consultation</a>
+        <h4>Platform</h4>
         <a href="../pages/about.html">About Geeta</a>
-        <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener">Medium Articles</a>
+        <a href="../pages/talks.html">Talks &amp; Workshops</a>
+        <a href="https://chat.whatsapp.com/invite/your-whatsapp-link-here" target="_blank" rel="noopener">WhatsApp Group</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Geeta Kakrani. Built with intent, not just code.</span>
-      <span>AI Consultant · GDE · <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank">LinkedIn</a></span>
+      <span>© 2026 Geeta Kakrani. All rights reserved.</span>
+      <span>GDE AI/ML · <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank">LinkedIn</a></span>
     </div>
   </div>
 </footer>
@@ -101,21 +85,19 @@ const NAV_HTML_HOME = `
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" aria-label="Geeta Kakrani Home">
       <span class="nav-logo-name">Geeta Kakrani</span>
-      <span class="nav-logo-title">AI Consultant · GDE</span>
+      <span class="nav-logo-title">AI Educator · GDE</span>
     </a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="pages/about.html">About</a>
-      <a href="pages/services.html">Services</a>
-      <a href="pages/case-studies.html">Case Studies</a>
+      <a href="pages/projects.html">Projects</a>
       <a href="pages/talks.html">Talks</a>
       <a href="pages/tutorials.html">Tutorials</a>
       <a href="pages/blog.html">Blog</a>
       <a href="pages/media.html">Media</a>
-      <a href="pages/resources.html">Resources</a>
     </div>
     <div class="nav-cta">
-      <a href="pages/contact.html" class="btn btn-primary btn-sm">Book Consultation</a>
+      <a href="#whatsapp-join" class="btn btn-primary btn-sm">Join Community</a>
     </div>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -125,14 +107,12 @@ const NAV_HTML_HOME = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="pages/about.html">About</a>
-  <a href="pages/services.html">Services</a>
-  <a href="pages/case-studies.html">Case Studies</a>
+  <a href="pages/projects.html">Projects</a>
   <a href="pages/talks.html">Talks</a>
   <a href="pages/tutorials.html">Tutorials</a>
   <a href="pages/blog.html">Blog</a>
   <a href="pages/media.html">Media</a>
-  <a href="pages/resources.html">Resources</a>
-  <a href="pages/contact.html" style="color:var(--teal-600);font-weight:600;">Book Consultation →</a>
+  <a href="#whatsapp-join" style="color:var(--primary-teal);font-weight:600;">Join Community →</a>
 </nav>
 `;
 
@@ -143,46 +123,34 @@ const FOOTER_HTML_HOME = `
       <div class="footer-brand">
         <div>
           <div class="footer-logo-name">Geeta Kakrani</div>
-          <div class="footer-logo-title">AI Consultant · Enterprise AI Strategist · GDE</div>
+          <div class="footer-logo-title">AI Educator · GDE · Speaker</div>
         </div>
-        <p>Helping enterprises and startups build practical, scalable AI systems. From strategy to production-grade GenAI, LLM, and agentic architectures.</p>
+        <p>Founder of Kanishka IT. Sharing practical knowledge in AI/ML, coding tutorials, and open-source AI agents. Connect on GitHub, YouTube, LinkedIn, and Medium.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn">in</a>
-          <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub">gh</a>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" title="Medium">M</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Instagram">ig</a>
+          <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" title="Medium"><i class="bi bi-medium"></i></a>
+          <a href="https://twitter.com/geeta_kakrani" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.youtube.com/@geetakakrani" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
-        <a href="pages/services.html">AI Strategy Consulting</a>
-        <a href="pages/services.html">Agentic AI Systems</a>
-        <a href="pages/services.html">Enterprise LLM Solutions</a>
-        <a href="pages/services.html">RAG Pipelines</a>
-        <a href="pages/services.html">Vertex AI Consulting</a>
-        <a href="pages/services.html">AI Workshops</a>
+        <h4>Resources</h4>
+        <a href="pages/projects.html">Projects &amp; Labs</a>
+        <a href="pages/tutorials.html">Tutorials &amp; Codelabs</a>
+        <a href="pages/blog.html">Blog Articles</a>
+        <a href="pages/media.html">Media &amp; Videos</a>
       </div>
       <div class="footer-col">
-        <h4>Content</h4>
-        <a href="pages/talks.html">Conference Talks</a>
-        <a href="pages/tutorials.html">Tutorials</a>
-        <a href="pages/blog.html">Blog</a>
-        <a href="pages/media.html">Media</a>
-        <a href="pages/case-studies.html">Case Studies</a>
-        <a href="pages/resources.html">Resources</a>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <a href="pages/contact.html">Book a Consultation</a>
+        <h4>Platform</h4>
         <a href="pages/about.html">About Geeta</a>
-        <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener">Medium Articles</a>
+        <a href="pages/talks.html">Talks &amp; Workshops</a>
+        <a href="https://chat.whatsapp.com/invite/your-whatsapp-link-here" target="_blank" rel="noopener">WhatsApp Group</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Geeta Kakrani. Built with intent, not just code.</span>
-      <span>AI Consultant · GDE · <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank">LinkedIn</a></span>
+      <span>© 2026 Geeta Kakrani. All rights reserved.</span>
+      <span>GDE AI/ML · <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank">LinkedIn</a></span>
     </div>
   </div>
 </footer>
@@ -238,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Set active link
-    const currentPage = window.location.pathname.split('/').pop();
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
       const href = link.getAttribute('href').split('/').pop();
       if (href === currentPage || (currentPage === '' && href === 'index.html')) {

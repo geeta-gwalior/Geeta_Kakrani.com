@@ -3,104 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Media — Geeta Kakrani | AI Videos, Talks & Appearances</title>
-  <meta name="description" content="Video content, conference recordings, YouTube tutorials, and media appearances by Geeta Kakrani — Google Developer Expert in AI/ML." />
+  <title>Media — Geeta Kakrani | AI Videos, Talks &amp; Publications</title>
+  <meta name="description" content="Video lectures, conference recordings, YouTube tutorials, and GDE articles by Geeta Kakrani — Google Developer Expert in AI/ML." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/pages.css" />
 </head>
 <body>
 
+  <!-- Dynamic Header placeholder -->
   <div id="nav-placeholder"></div>
 
+  <!-- PAGE HERO -->
   <section class="page-hero">
+    <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
     <div class="container">
       <div class="page-hero-breadcrumb">Home / Media</div>
-      <h1>Media & Video Content</h1>
-      <p>Conference talk recordings, YouTube tutorials, podcast appearances, and short-form AI explainers — all in one place.</p>
+      <h1>Media &amp; Video Content</h1>
+      <p>Conference recordings, YouTube coding tutorials, GDE technical publications, and developer community updates in one library.</p>
     </div>
   </section>
 
-  <!-- ══ FEATURED VIDEO ══ -->
-  <section class="section" style="padding-bottom:48px;">
+  <!-- FEATURED VIDEO -->
+  <section class="section" style="padding-bottom: 48px;">
     <div class="container">
       <div class="section-label">Featured Recording</div>
-      <h2 class="section-heading" style="margin-bottom:32px;">Featured Technical Deep Dive</h2>
+      <h2 class="section-heading" style="margin-bottom: 32px;">Featured Technical Deep Dive</h2>
 
-      <div style="display:grid; grid-template-columns:1.6fr 1fr; gap:40px; align-items:start;" class="reveal">
-        <div>
-          <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" style="text-decoration:none; display:block;">
-            <div style="aspect-ratio:16/9; background:url('https://i.ytimg.com/vi/fo4e_lK6_8s/hqdefault.jpg') center/cover no-repeat; border-radius:var(--radius-xl); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; box-shadow:var(--shadow-xl);">
-              <div style="position:absolute; inset:0; background:rgba(0,0,0,0.3); transition:background 0.3s;" onmouseover="this.style.background='rgba(0,0,0,0.1)'" onmouseout="this.style.background='rgba(0,0,0,0.3)'"></div>
-              <div style="text-align:center; z-index:1;">
-                <div style="font-size:4rem; margin-bottom:12px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));">▶️</div>
+      <div class="row gy-4 align-items-center reveal">
+        <!-- Thumbnail -->
+        <div class="col-lg-7">
+          <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" rel="noopener" style="text-decoration:none; display:block;">
+            <div style="aspect-ratio: 16/9; background: url('https://i.ytimg.com/vi/fo4e_lK6_8s/hqdefault.jpg') center/cover no-repeat; border-radius: var(--radius-xl); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; border: 1px solid var(--border-glass);">
+              <div style="position:absolute; inset:0; background:rgba(6, 7, 11, 0.4); transition:background 0.3s;" onmouseover="this.style.background='rgba(6, 7, 11, 0.2)'" onmouseout="this.style.background='rgba(6, 7, 11, 0.4)'"></div>
+              <div style="z-index: 1;">
+                <div class="media-play-circle">▶</div>
               </div>
             </div>
           </a>
         </div>
-        <div style="padding-top:8px;">
-          <span class="badge badge-amber" style="margin-bottom:16px;">⭐ Highlight Video</span>
-          <h3 style="margin-bottom:12px; line-height:1.3;">AI-Driven Research Workflows with OpenClaw</h3>
-          <p style="font-size:0.9rem; color:var(--gray-500); margin-bottom:20px;">A practical guide to building fully autonomous research workflows. In this video, I demonstrate how to set up OpenClaw using Docker and connect it to a local Ollama instance running the Gemma model for private, cost-effective research automation.</p>
-          <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
-            <div style="display:flex; align-items:center; gap:10px; font-size:0.85rem; color:var(--gray-600);">
-              <span>📺</span> YouTube Channel
-            </div>
-            <div style="display:flex; align-items:center; gap:10px; font-size:0.85rem; color:var(--gray-600);">
-              <span>🛠️</span> Docker, Ollama, Gemma Model
-            </div>
-            <div style="display:flex; align-items:center; gap:10px; font-size:0.85rem; color:var(--gray-600);">
-              <span>💡</span> Developer Tools &amp; Local Workflows
-            </div>
+        
+        <!-- Info -->
+        <div class="col-lg-5">
+          <span class="badge badge-amber" style="margin-bottom: 16px;">⭐ Highlight Video</span>
+          <h3 class="mb-3">AI-Driven Research Workflows with OpenClaw</h3>
+          <p class="text-secondary mb-4">A practical guide to building fully autonomous research workflows. Learn how to configure OpenClaw using Docker and integrate a local Ollama instance running the Gemma model for secure, offline analysis.</p>
+          
+          <div class="d-flex flex-column gap-2 mb-4 text-sm text-secondary">
+            <div><i class="bi bi-play-btn-fill text-teal me-2"></i> YouTube Channel Tutorial</div>
+            <div><i class="bi bi-cpu-fill text-teal me-2"></i> Docker, Ollama, Gemma Model</div>
+            <div><i class="bi bi-lightbulb-fill text-teal me-2"></i> Private, local-first architectures</div>
           </div>
-          <div class="tag-cloud" style="margin-bottom:24px;">
+
+          <div class="tag-cloud mb-4">
             <span class="tag">OpenClaw</span>
             <span class="tag">Ollama</span>
             <span class="tag">Gemma</span>
             <span class="tag">Docker</span>
           </div>
-          <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" class="btn btn-primary">Watch Tutorial →</a>
+
+          <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" rel="noopener" class="btn btn-primary">Watch Tutorial →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══ YOUTUBE TUTORIALS & CODELABS ══ -->
-  <section class="section" style="background:var(--gray-50); padding-top:64px;">
+  <!-- YOUTUBE VIDEO GRID -->
+  <section class="section" style="background:#090b11; border-top:1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); padding-top: 64px;">
     <div class="container">
       <div class="section-label">YouTube Series</div>
-      <h2 class="section-heading" style="margin-bottom:40px;">Video Tutorials</h2>
+      <h2 class="mb-5">Video Tutorials</h2>
 
       <div class="grid-3">
-
         <!-- Video 1 -->
-        <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" class="media-card reveal" style="text-decoration:none; display:block;">
-          <div class="media-thumb" style="background:url('https://i.ytimg.com/vi/fo4e_lK6_8s/hqdefault.jpg') center/cover no-repeat; aspect-ratio:16/9; position:relative;">
+        <a href="https://www.youtube.com/watch?v=fo4e_lK6_8s" target="_blank" rel="noopener" class="media-card reveal">
+          <div class="media-thumb" style="background: url('https://i.ytimg.com/vi/fo4e_lK6_8s/hqdefault.jpg') center/cover no-repeat; aspect-ratio: 16/9;">
             <div class="media-play-btn">
               <div class="media-play-circle">▶</div>
             </div>
           </div>
           <div class="media-card-body">
-            <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-teal">Docker &amp; AI</span>
-              <span style="font-size:0.72rem; color:var(--gray-400); font-family:var(--font-mono);">Tutorial</span>
+              <span class="font-mono text-xs text-muted">Tutorial</span>
             </div>
             <h4>AI-Driven Research Workflows with OpenClaw</h4>
-            <p>Setting up OpenClaw with Docker and local Gemma/Ollama model.</p>
+            <p>Setting up OpenClaw with Docker and local Gemma/Ollama models.</p>
           </div>
         </a>
 
         <!-- Video 2 -->
-        <a href="https://www.youtube.com/watch?v=A0s3TYg2uoM" target="_blank" class="media-card reveal reveal-delay-1" style="text-decoration:none; display:block;">
-          <div class="media-thumb" style="background:url('https://i.ytimg.com/vi/A0s3TYg2uoM/hqdefault.jpg') center/cover no-repeat; aspect-ratio:16/9; position:relative;">
+        <a href="https://www.youtube.com/watch?v=A0s3TYg2uoM" target="_blank" rel="noopener" class="media-card reveal reveal-delay-1">
+          <div class="media-thumb" style="background: url('https://i.ytimg.com/vi/A0s3TYg2uoM/hqdefault.jpg') center/cover no-repeat; aspect-ratio: 16/9;">
             <div class="media-play-btn">
               <div class="media-play-circle">▶</div>
             </div>
           </div>
           <div class="media-card-body">
-            <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-teal">Open Source LLM</span>
-              <span style="font-size:0.72rem; color:var(--gray-400); font-family:var(--font-mono);">Episode 3</span>
+              <span class="font-mono text-xs text-muted">Episode 3</span>
             </div>
             <h4>How to Load Gemma from Hugging Face</h4>
             <p>Step-by-step implementation for local inference of Google Gemma.</p>
@@ -108,106 +121,101 @@
         </a>
 
         <!-- Video 3 -->
-        <a href="https://www.youtube.com/watch?v=KISKXhUq6LY" target="_blank" class="media-card reveal reveal-delay-2" style="text-decoration:none; display:block;">
-          <div class="media-thumb" style="background:url('https://i.ytimg.com/vi/KISKXhUq6LY/hqdefault.jpg') center/cover no-repeat; aspect-ratio:16/9; position:relative;">
+        <a href="https://www.youtube.com/watch?v=KISKXhUq6LY" target="_blank" rel="noopener" class="media-card reveal reveal-delay-2">
+          <div class="media-thumb" style="background: url('https://i.ytimg.com/vi/KISKXhUq6LY/hqdefault.jpg') center/cover no-repeat; aspect-ratio: 16/9;">
             <div class="media-play-btn">
               <div class="media-play-circle">▶</div>
             </div>
           </div>
           <div class="media-card-body">
-            <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-teal">Programming</span>
-              <span style="font-size:0.72rem; color:var(--gray-400); font-family:var(--font-mono);">Data Science</span>
+              <span class="font-mono text-xs text-muted">Data Science</span>
             </div>
             <h4>Data Science and Programming Concepts</h4>
             <p>Core programming fundamentals essential for data science pipelines.</p>
           </div>
         </a>
-
       </div>
     </div>
   </section>
 
-  <!-- ══ WRITTEN PUBLICATIONS (MEDIUM) ══ -->
-  <section class="section" style="padding-top:64px;">
+  <!-- GDE WRITTEN ARTICLES -->
+  <section class="section" style="padding-top: 64px;">
     <div class="container">
       <div class="section-label">Written Media</div>
-      <h2 class="section-heading" style="margin-bottom:40px;">Recent GDE Publications on Medium</h2>
+      <h2 class="mb-5">Recent GDE Publications on Medium</h2>
+
       <div class="grid-3">
-
-        <a href="https://medium.com/google-developer-experts/google-antigravity-2-0-gemini-3-5-flash-the-ai-that-codes-tests-and-ships-without-you-24dc2dc2ba47" target="_blank" class="blog-card reveal" style="text-decoration:none; display:block;">
-          <div class="blog-card-img">🚀</div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-card-cat">Agentic AI</span>
-              <span class="blog-card-date">GDE Medium</span>
-            </div>
-            <h4>Google Antigravity 2.0 + Gemini 3.5 Flash: The AI That Codes, Tests, and Ships</h4>
-            <p>Exploring the capabilities of Google's latest autonomous developer environment.</p>
-          </div>
+        <!-- Card 1 -->
+        <a href="https://medium.com/google-developer-experts/google-antigravity-2-0-gemini-3-5-flash-the-ai-that-codes-tests-and-ships-without-you-24dc2dc2ba47" target="_blank" rel="noopener" class="card reveal" style="text-decoration:none;">
+          <div style="font-size:2.8rem; margin-bottom: 20px;">🚀</div>
+          <span class="blog-card-cat">Agentic AI</span>
+          <h4 class="mt-2 mb-3">Google Antigravity 2.0 + Gemini 3.5 Flash: The AI That Codes</h4>
+          <p class="text-sm text-secondary">Exploring the capabilities of Google's autonomous development ecosystem.</p>
         </a>
 
-        <a href="https://medium.com/google-developer-experts/vertex-ai-is-gone-here-is-what-google-built-instead-92556d1c64eb" target="_blank" class="blog-card reveal reveal-delay-1" style="text-decoration:none; display:block;">
-          <div class="blog-card-img">🔄</div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-card-cat">Vertex AI</span>
-              <span class="blog-card-date">GDE Medium</span>
-            </div>
-            <h4>Vertex AI Is Gone. Here Is What Google Built Instead</h4>
-            <p>An honest analysis of the rebranding and restructuring of Google Cloud's AI suite.</p>
-          </div>
+        <!-- Card 2 -->
+        <a href="https://medium.com/google-developer-experts/vertex-ai-is-gone-here-is-what-google-built-instead-92556d1c64eb" target="_blank" rel="noopener" class="card reveal reveal-delay-1" style="text-decoration:none;">
+          <div style="font-size:2.8rem; margin-bottom: 20px;">🔄</div>
+          <span class="blog-card-cat">Vertex AI</span>
+          <h4 class="mt-2 mb-3">Vertex AI Is Gone. Here Is What Google Built Instead</h4>
+          <p class="text-sm text-secondary">An honest analysis of the rebranding and restructuring of Google Cloud's AI suite.</p>
         </a>
 
-        <a href="https://medium.com/google-developer-experts/%EF%B8%8F-leximini-how-i-built-an-ai-legal-assistant-for-india-from-scratch-on-a-tpu-f8354e20cbc9" target="_blank" class="blog-card reveal reveal-delay-2" style="text-decoration:none; display:block;">
-          <div class="blog-card-img">⚖️</div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-card-cat">AI-TPU Specialist</span>
-              <span class="blog-card-date">GDE Medium</span>
-            </div>
-            <h4>LexiMini: How I Built an AI Legal Assistant for India on a TPU</h4>
-            <p>Walkthrough of building a domain-specific model for Indian law served on Google TPUs.</p>
-          </div>
+        <!-- Card 3 -->
+        <a href="https://medium.com/google-developer-experts/%EF%B8%8F-leximini-how-i-built-an-ai-legal-assistant-for-india-from-scratch-on-a-tpu-f8354e20cbc9" target="_blank" rel="noopener" class="card reveal reveal-delay-2" style="text-decoration:none;">
+          <div style="font-size:2.8rem; margin-bottom: 20px;">⚖️</div>
+          <span class="blog-card-cat">AI-TPU Specialist</span>
+          <h4 class="mt-2 mb-3">LexiMini: How I Built an AI Legal Assistant for India on a TPU</h4>
+          <p class="text-sm text-secondary">Walkthrough of building a domain-specific model for Indian law served on Google TPUs.</p>
         </a>
-
       </div>
     </div>
   </section>
 
-  <!-- ══ SPEAKER & COMMUNITY PROFILE ══ -->
-  <section class="section" style="background:var(--gray-50); padding-top:64px; padding-bottom:64px;">
+  <!-- SPEAKER & COMMUNITY leadership -->
+  <section class="section" style="background:#090b11; border-top:1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); padding-top: 64px; padding-bottom: 64px;">
     <div class="container">
       <div class="section-label">Public Speaking &amp; Community</div>
-      <h2 class="section-heading" style="margin-bottom:40px;">90+ AI Talks &amp; Community Leadership</h2>
-      <div class="grid-2" style="gap:24px;">
-
-        <div class="card card-glass reveal">
-          <h4 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">🎙️ Conference Speaker</h4>
-          <p style="font-size: 0.9rem;">With over 90+ talks delivered, I have spoken at global conferences, developer groups, colleges, and corporate training programs. I specialize in making deep technical concepts like Cloud Infrastructure, Gemma Model Cost Efficiency, and AI-TPU architecture accessible to engineering teams.</p>
+      <h2 class="mb-5">90+ AI Talks &amp; Community Leadership</h2>
+      
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="card card-glass h-100">
+            <h4 class="mb-3"><i class="bi bi-mic-fill text-teal me-2"></i> Conference Speaker</h4>
+            <p class="text-sm">With over 90+ talks delivered, I have spoken at global conferences, developer groups, colleges, and corporate training programs. I specialize in making deep technical concepts like Cloud Infrastructure, Gemma Model Cost Efficiency, and AI-TPU architecture accessible to engineering teams.</p>
+          </div>
         </div>
 
-        <div class="card card-glass reveal reveal-delay-1">
-          <h4 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">🤝 GDG Gwalior Founder</h4>
-          <p style="font-size: 0.9rem;">Founded Google Developer Group (GDG) Gwalior in 2019 to nurture technical talent, build developer connections, and promote Google Cloud and open-source ecosystems. Actively mentoring AI engineers and leading community engagement initiatives.</p>
+        <div class="col-md-6 reveal reveal-delay-1">
+          <div class="card card-glass h-100">
+            <h4 class="mb-3"><i class="bi bi-people-fill text-teal me-2"></i> GDG Gwalior Founder</h4>
+            <p class="text-sm">Founded Google Developer Group (GDG) Gwalior in 2019 to nurture technical talent, build developer connections, and promote Google Cloud and open-source ecosystems. Actively mentoring AI engineers and leading community engagement initiatives.</p>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- YouTube CTA -->
+  <!-- CTA -->
   <section class="newsletter-section">
     <div class="newsletter-inner">
       <h2>Subscribe on YouTube</h2>
-      <p>New tutorial videos, conference recordings, and AI explainers — subscribe so you don't miss upcoming content.</p>
-      <a href="https://www.youtube.com/@geetakakrani" target="_blank" class="btn btn-lg" style="background:var(--white); color:#dc2626; font-weight:700; display:inline-flex; gap:10px;">
-        ▶ Subscribe on YouTube
+      <p>Subscribe to receive video tutorials, conference session recordings, and live demonstrations of agentic systems.</p>
+      <a href="https://www.youtube.com/@geetakakrani" target="_blank" rel="noopener" class="btn btn-lg btn-primary" style="background:#ef4444; border-color:#ef4444; color:#fff;">
+        <i class="bi bi-youtube"></i> Subscribe on YouTube
       </a>
     </div>
   </section>
 
+  <!-- Footer Placeholder -->
   <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
   <script src="../js/components.js"></script>
   <script src="../js/main.js"></script>
 </body>

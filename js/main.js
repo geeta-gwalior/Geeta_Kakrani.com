@@ -12,10 +12,12 @@
 
   // Scroll effect
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (navbar) {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     }
   }, { passive: true });
 
@@ -208,7 +210,9 @@ function initFilters(containerSelector, cardSelector, attrName) {
       const filter = btn.dataset.filter;
 
       allCards.forEach(card => {
-        if (filter === 'all' || card.dataset[attrName] === filter) {
+        const attrVal = card.dataset[attrName] || '';
+        const categories = attrVal.split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
           card.style.display = '';
           card.classList.remove('hidden');
         } else {

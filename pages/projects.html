@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Geeta Kakrani | Open Source AI Labs</title>
+  <meta name="description" content="Explore open-source AI projects, machine learning models, and agent implementations built by Geeta Kakrani." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <style>
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    .project-card {
+      background: var(--bg-dark-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: all 0.3s var(--ease-premium);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-card:hover {
+      border-color: var(--border-glass-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg), 0 0 15px rgba(20,184,166,0.1);
+      background: var(--bg-dark-card-hover);
+    }
+    .project-icon {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    .project-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .project-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 18px;
+      margin-top: auto;
+    }
+    .project-lang {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--primary-teal);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .project-lang-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--primary-teal);
+      border-radius: 50%;
+      box-shadow: 0 0 6px var(--primary-teal);
+    }
+    .project-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-teal);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .project-link:hover {
+      color: var(--primary-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
+    <div class="container">
+      <div class="page-hero-breadcrumb">Home / Projects</div>
+      <h1>Open Source Projects &amp; Labs</h1>
+      <p>A collection of machine learning pipelines, AI orchestrators, custom agents, and developer utilities built with Gemini, Gemma, and Google's SDKs.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="project-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-icon">🤖</div>
+          <h3 class="project-title">LexiMini Legal Assistant</h3>
+          <p class="project-desc">A domain-specific AI legal assistant specialized in Indian law, fine-tuned and hosted using Google Cloud TPUs and Vertex AI endpoints.</p>
+          <div class="project-meta">
+            <span class="project-lang">
+              <span class="project-lang-dot"></span> Python
+            </span>
+            <a href="https://github.com/geeta-gwalior/LexiMini" target="_blank" rel="noopener" class="project-link">View Repo →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">☕</div>
+          <h3 class="project-title">Indian Coffee AI Agent</h3>
+          <p class="project-desc">Personalized AI recommendations engine orchestrator built on Google Gemma 3 and AGY SDK. Learns user preferences over conversation loops.</p>
+          <div class="project-meta">
+            <span class="project-lang">
+              <span class="project-lang-dot"></span> Python
+            </span>
+            <a href="https://github.com/geeta-gwalior/coffee-agent" target="_blank" rel="noopener" class="project-link">View Repo →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon">🔗</div>
+          <h3 class="project-title">LangGraph Multi-Agent Setup</h3>
+          <p class="project-desc">Template repository for orchestrating collaborative AI teams (planners, researchers, and editors) leveraging Gemini Flash.</p>
+          <div class="project-meta">
+            <span class="project-lang">
+              <span class="project-lang-dot" style="background: var(--primary-violet); box-shadow: 0 0 6px var(--primary-violet);"></span> TypeScript
+            </span>
+            <a href="https://github.com/geeta-gwalior/langgraph-gemini-starter" target="_blank" rel="noopener" class="project-link">View Repo →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-icon">⚙️</div>
+          <h3 class="project-title">Vertex AI Pipelines Helper</h3>
+          <p class="project-desc">Custom CLI scripts to automate MLOps setups, Kubeflow DSL compilations, and model deployment triggers on Vertex AI.</p>
+          <div class="project-meta">
+            <span class="project-lang">
+              <span class="project-lang-dot"></span> Python
+            </span>
+            <a href="https://github.com/geeta-gwalior/vertex-pipelines-cli" target="_blank" rel="noopener" class="project-link">View Repo →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <h2>Explore All Repositories</h2>
+      <p>Find more scripts, templates, and libraries directly on GitHub. Open issues, forks, and contributions are always welcome!</p>
+      <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" class="btn btn-lg btn-primary">
+        <i class="bi bi-github"></i> Follow on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -3,36 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorials — Geeta Kakrani | GenAI Codelabs & Guides</title>
+  <title>Tutorials — Geeta Kakrani | GenAI Codelabs &amp; Guides</title>
   <meta name="description" content="Hands-on GenAI tutorials, codelabs, and guides on LangChain, LangGraph, RAG, Vertex AI, and Agentic AI by Geeta Kakrani — Google Developer Expert." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/button-icons.min.css">
+
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/pages.css" />
 </head>
 <body>
 
+  <!-- Dynamic Header placeholder -->
   <div id="nav-placeholder"></div>
 
+  <!-- PAGE HERO -->
   <section class="page-hero">
+    <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
     <div class="container">
       <div class="page-hero-breadcrumb">Home / Tutorials</div>
-      <h1>Tutorials & Codelabs</h1>
+      <h1>Tutorials &amp; Codelabs</h1>
       <p>Hands-on, production-focused tutorials on GenAI, LLMs, RAG, Agentic AI, and Vertex AI — with working code on GitHub.</p>
     </div>
   </section>
 
+  <!-- SEARCH + FILTER + GRID -->
   <section class="section">
     <div class="container">
 
-      <!-- Search + Filter -->
-      <div class="tutorials-search-bar">
-        <input type="text" id="tutorialSearch" placeholder="🔍  Search tutorials — e.g. LangGraph, RAG, Vertex AI…" />
-        <a href="https://github.com/geeta-gwalior" target="_blank" class="btn btn-secondary">
-          GitHub Repos →
+      <!-- Search bar -->
+      <div class="tutorials-search-bar reveal">
+        <input type="text" id="tutorialSearch" placeholder="🔍  Search tutorials — e.g. LangGraph, RAG, Vertex AI…" aria-label="Search tutorials" />
+        <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" class="btn btn-secondary">
+          <i class="bi bi-github"></i> GitHub Repos
         </a>
       </div>
 
-      <div class="talks-filter-bar" id="tutorialFilters" style="margin-bottom:48px;">
+      <!-- Filters -->
+      <div class="talks-filter-bar reveal reveal-delay-1" id="tutorialFilters" style="margin-bottom: 48px;">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="agents">Agentic AI</button>
         <button class="filter-btn" data-filter="rag">RAG</button>
@@ -42,7 +58,7 @@
         <button class="filter-btn" data-filter="cost">Cost Optimization</button>
       </div>
 
-      <!-- Tutorial Cards Grid — real GitHub repos -->
+      <!-- Tutorial Grid -->
       <div class="grid-3" id="tutorialGrid">
 
         <!-- 1: Gemma RAG Coffee Shop Chatbot -->
@@ -53,14 +69,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>Build an intelligent chatbot using Retrieval-Augmented Generation (RAG) with Gemma. Covers vector embeddings, document retrieval, and contextual response generation for a real use case.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">Gemma</span>
               <span class="tag">RAG</span>
               <span class="tag">Python</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 45 min</span>
-              <a href="https://github.com/geeta-gwalior/Gemma-with-RAG-A-Coffee-Shop-Chatbot" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 45 min</span>
+              <a href="https://github.com/geeta-gwalior/Gemma-with-RAG-A-Coffee-Shop-Chatbot" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -73,15 +89,17 @@
           </div>
           <div class="tutorial-card-body">
             <p>Build a fully offline AI chatbot that runs on your phone — no server needed. Uses Flutter, Google Gemma, and MediaPipe for completely private, on-device inference.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">Gemma</span>
               <span class="tag">Flutter</span>
               <span class="tag">MediaPipe</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 60 min</span>
-              <a href="https://github.com/geeta-gwalior/gemma-flutter-chatbot" target="_blank" class="tutorial-github">GitHub →</a>
-              <a href="https://geeta-gwalior.github.io/gemma-flutter-chatbot/#2" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 60 min</span>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/geeta-gwalior/gemma-flutter-chatbot" target="_blank" rel="noopener" class="tutorial-github">GitHub</a>
+                <a href="https://geeta-gwalior.github.io/gemma-flutter-chatbot/#2" target="_blank" rel="noopener" class="tutorial-github" style="background:var(--primary-teal); color:var(--bg-dark-base); border-color:var(--primary-teal);">Codelab</a>
+              </div>
             </div>
           </div>
         </div>
@@ -94,15 +112,17 @@
           </div>
           <div class="tutorial-card-body">
             <p>Hands-on codelab walking through Google's Antigravity agent-first dev platform — Desktop App, CLI <code>agy</code>, and Python SDK with real examples and live demos.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">Antigravity 2.0</span>
               <span class="tag">Agentic AI</span>
               <span class="tag">Python</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 40 min</span>
-              <a href="https://github.com/geeta-gwalior/Antigravity_2.0" target="_blank" class="tutorial-github">GitHub →</a>
-              <a href="https://geeta-gwalior.github.io/antigravity-2-genai-mcp-portfolio/#7" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 40 min</span>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/geeta-gwalior/Antigravity_2.0" target="_blank" rel="noopener" class="tutorial-github">GitHub</a>
+                <a href="https://geeta-gwalior.github.io/antigravity-2-genai-mcp-portfolio/#7" target="_blank" rel="noopener" class="tutorial-github" style="background:var(--primary-teal); color:var(--bg-dark-base); border-color:var(--primary-teal);">Codelab</a>
+              </div>
             </div>
           </div>
         </div>
@@ -115,16 +135,17 @@
           </div>
           <div class="tutorial-card-body">
             <p>Set up OpenClaw with Docker and a local Ollama/Gemma model for fully on-device AI research automation. Ideal for teams processing sensitive data without cloud APIs.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">OpenClaw</span>
               <span class="tag">Ollama</span>
               <span class="tag">Gemma</span>
-              <span class="tag">Docker</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 50 min</span>
-              <a href="https://github.com/geeta-gwalior/AI-Driven-Research-Workflows-with-OpenClaw" target="_blank" class="tutorial-github">GitHub →</a>
-              <a href="https://geeta-gwalior.github.io/AI-Driven-Research-Workflows-with-OpenClaw/#2" target="_blank" class="tutorial-github" style="background:var(--teal-600); color:#fff; border-color:var(--teal-600);">Codelab →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 50 min</span>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/geeta-gwalior/AI-Driven-Research-Workflows-with-OpenClaw" target="_blank" rel="noopener" class="tutorial-github">GitHub</a>
+                <a href="https://geeta-gwalior.github.io/AI-Driven-Research-Workflows-with-OpenClaw/#2" target="_blank" rel="noopener" class="tutorial-github" style="background:var(--primary-teal); color:var(--bg-dark-base); border-color:var(--primary-teal);">Codelab</a>
+              </div>
             </div>
           </div>
         </div>
@@ -137,15 +158,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>Route low-complexity tasks to Gemma 3 (Vertex AI) and high-reasoning tasks to Gemini 2.5 Flash — a practical implementation of cost-efficient hybrid AI infrastructure.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">Gemma 3</span>
               <span class="tag">Gemini</span>
               <span class="tag">Vertex AI</span>
-              <span class="tag">Cost Optimization</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 75 min</span>
-              <a href="https://github.com/geeta-gwalior/Reducing-AI-Costs-via-Hybrid-Multi-Model-Infrastructure" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 75 min</span>
+              <a href="https://github.com/geeta-gwalior/Reducing-AI-Costs-via-Hybrid-Multi-Model-Infrastructure" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -158,14 +178,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>Build a domain-specific AI legal assistant trained on Indian law using Google TPUs. Covers dataset curation, fine-tuning, deployment, and accuracy challenges in a specialized domain.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">TPU</span>
               <span class="tag">Fine-tuning</span>
               <span class="tag">Legal AI</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 90 min</span>
-              <a href="https://github.com/geeta-gwalior/Leximini_AI" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 90 min</span>
+              <a href="https://github.com/geeta-gwalior/Leximini_AI" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -178,14 +198,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>A local GenAI agent that turns CSV files into interactive dashboards using Ollama and Gemma — keeping sensitive business data fully on-premises, no cloud required.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">Gemma</span>
               <span class="tag">Ollama</span>
               <span class="tag">Data Analysis</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 55 min</span>
-              <a href="https://github.com/geeta-gwalior/Analytica-Agent" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 55 min</span>
+              <a href="https://github.com/geeta-gwalior/Analytica-Agent" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -198,14 +218,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>Set up a collaborative multi-agent system using CrewAI and Gemini AI — with specialized agents for planning, research, writing, and review working in concert.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">CrewAI</span>
               <span class="tag">Gemini</span>
               <span class="tag">Multi-Agent</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 45 min</span>
-              <a href="https://github.com/geeta-gwalior/MultiAgent_GeminiAi" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 45 min</span>
+              <a href="https://github.com/geeta-gwalior/MultiAgent_GeminiAi" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -218,14 +238,14 @@
           </div>
           <div class="tutorial-card-body">
             <p>A beginner-friendly introduction to Natural Language Processing — tokenization, embeddings, sentiment analysis, and text classification with real Python examples.</p>
-            <div class="tag-cloud" style="margin-bottom:16px;">
+            <div class="tag-cloud mb-3">
               <span class="tag">NLP</span>
               <span class="tag">Python</span>
               <span class="tag">Beginners</span>
             </div>
             <div class="tutorial-meta">
-              <span class="tutorial-time">⏱ 30 min</span>
-              <a href="https://github.com/geeta-gwalior/NLP_Tutorial" target="_blank" class="tutorial-github">GitHub →</a>
+              <span class="tutorial-time"><i class="bi bi-clock"></i> 30 min</span>
+              <a href="https://github.com/geeta-gwalior/NLP_Tutorial" target="_blank" rel="noopener" class="tutorial-github">GitHub →</a>
             </div>
           </div>
         </div>
@@ -234,18 +254,24 @@
     </div>
   </section>
 
-  <!-- GitHub CTA -->
+  <!-- CTA -->
   <section class="newsletter-section">
     <div class="newsletter-inner">
-      <h2>All Code on GitHub</h2>
-      <p>Every tutorial has a complete, working repository — fork it, run it, and adapt it for your own projects. Stars and contributions welcome.</p>
-      <a href="https://github.com/geeta-gwalior" target="_blank" class="btn btn-lg" style="background:var(--white); color:var(--gray-900); font-weight:600; display:inline-flex; gap:10px;">
-        ⭐ github.com/geeta-gwalior
+      <h2>All Code Available on GitHub</h2>
+      <p>Every tutorial corresponds to a complete, active open-source repository. Clone, run, and adapt the architectures for your products.</p>
+      <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" class="btn btn-lg btn-primary">
+        <i class="bi bi-github"></i> Explore github.com/geeta-gwalior
       </a>
     </div>
   </section>
 
+  <!-- Footer Placeholder -->
   <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
   <script src="../js/components.js"></script>
   <script src="../js/main.js"></script>
 </body>

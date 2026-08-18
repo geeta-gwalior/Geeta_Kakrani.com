@@ -4,54 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog — Geeta Kakrani | AI Articles on Medium</title>
-  <meta name="description" content="Real published articles by Geeta Kakrani on Vertex AI, Gemini, LangChain, Agentic AI, RAG, Google Gemma and more — published on Google Developer Experts Medium." />
+  <meta name="description" content="Published articles by Geeta Kakrani on Vertex AI, Gemini, LangChain, Agentic AI, RAG, Google Gemma, and more — featured on Google Developer Experts Medium." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/pages.css" />
 </head>
 <body>
 
+  <!-- Dynamic Header placeholder -->
   <div id="nav-placeholder"></div>
 
+  <!-- PAGE HERO -->
   <section class="page-hero">
+    <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
     <div class="container">
       <div class="page-hero-breadcrumb">Home / Blog</div>
       <h1>Writing on AI</h1>
-      <p>36 published articles on Generative AI, Vertex AI, Gemini, LangChain, Agentic AI and more — featured in Google Developer Experts, Google Cloud, and Python in Plain English publications on Medium.</p>
+      <p>36 published articles on Generative AI, Vertex AI, Gemini, LangChain, and Agentic AI — featured in Google Developer Experts, Google Cloud Community, and Python in Plain English publications on Medium.</p>
     </div>
   </section>
 
+  <!-- BLOG METRICS + FILTER + CARDS -->
   <section class="section">
     <div class="container">
 
-      <!-- Stats bar -->
-      <div style="display:flex; gap:32px; flex-wrap:wrap; padding:24px 32px; background:var(--teal-50); border:1px solid var(--teal-200); border-radius:var(--radius-lg); margin-bottom:48px;" class="reveal">
+      <!-- Stats row -->
+      <div style="display:flex; gap:32px; flex-wrap:wrap; padding:24px 32px; background:rgba(20, 184, 166, 0.05); border:1px solid rgba(20, 184, 166, 0.2); border-radius:var(--radius-lg); margin-bottom:48px; align-items:center;" class="reveal">
         <div style="text-align:center;">
-          <div style="font-family:var(--font-display); font-size:2rem; color:var(--teal-600); line-height:1;" data-counter="36">0</div>
-          <div style="font-size:0.78rem; color:var(--gray-500); margin-top:4px;">Articles Published</div>
+          <div class="font-bold text-gradient-cyan-teal" style="font-size:2.2rem; line-height:1;" data-counter="36">0</div>
+          <div style="font-size:0.78rem; color:var(--text-secondary); margin-top:4px;">Articles Published</div>
         </div>
-        <div style="width:1px; background:var(--teal-200);"></div>
+        <div style="width:1px; height:40px; background:rgba(255,255,255,0.1);"></div>
         <div style="text-align:center;">
-          <div style="font-family:var(--font-display); font-size:2rem; color:var(--teal-600); line-height:1;">GDE</div>
-          <div style="font-size:0.78rem; color:var(--gray-500); margin-top:4px;">Google Developer Experts</div>
+          <div class="font-bold text-gradient-cyan-teal" style="font-size:2.2rem; line-height:1;">GDE</div>
+          <div style="font-size:0.78rem; color:var(--text-secondary); margin-top:4px;">Google Developer Experts</div>
         </div>
-        <div style="width:1px; background:var(--teal-200);"></div>
+        <div style="width:1px; height:40px; background:rgba(255,255,255,0.1);"></div>
         <div style="text-align:center;">
-          <div style="font-family:var(--font-display); font-size:2rem; color:var(--teal-600); line-height:1;">3</div>
-          <div style="font-size:0.78rem; color:var(--gray-500); margin-top:4px;">Publications</div>
+          <div class="font-bold text-gradient-cyan-teal" style="font-size:2.2rem; line-height:1;">3</div>
+          <div style="font-size:0.78rem; color:var(--text-secondary); margin-top:4px;">Publications</div>
         </div>
-        <div style="width:1px; background:var(--teal-200);"></div>
+        <div style="width:1px; height:40px; background:rgba(255,255,255,0.1);"></div>
         <div style="text-align:center;">
-          <div style="font-family:var(--font-display); font-size:2rem; color:var(--teal-600); line-height:1;">2024</div>
-          <div style="font-size:0.78rem; color:var(--gray-500); margin-top:4px;">Writing Since</div>
+          <div class="font-bold text-gradient-cyan-teal" style="font-size:2.2rem; line-height:1;">2024</div>
+          <div style="font-size:0.78rem; color:var(--text-secondary); margin-top:4px;">Writing Since</div>
         </div>
         <div style="margin-left:auto; display:flex; align-items:center;">
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="btn btn-primary btn-sm">Follow on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Follow on Medium →</a>
         </div>
       </div>
 
-      <!-- Filter bar -->
-      <div class="talks-filter-bar" style="margin-bottom:40px;">
+      <!-- Filters -->
+      <div class="talks-filter-bar reveal reveal-delay-1" style="margin-bottom:40px;">
         <button class="filter-btn active" data-filter="all">All Articles</button>
         <button class="filter-btn" data-filter="vertex">Vertex AI</button>
         <button class="filter-btn" data-filter="gemini">Gemini</button>
@@ -60,9 +75,9 @@
         <button class="filter-btn" data-filter="gemma">Gemma</button>
       </div>
 
-      <!-- ── FEATURED ── -->
-      <div class="blog-full-card reveal" style="margin-bottom:24px; border:2px solid var(--teal-200);" data-blog-cat="agents">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b); min-height:240px;">
+      <!-- ── FEATURED ARTICLE ── -->
+      <div class="blog-full-card reveal" style="margin-bottom:32px; border:1px solid rgba(20, 184, 166, 0.4);" data-blog-cat="agents">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#0c0c16,#120e2e); min-height:240px;">
           <span style="font-size:4rem;">🚀</span>
         </div>
         <div class="blog-full-body">
@@ -79,13 +94,13 @@
             <span class="badge badge-gray">Agentic AI</span>
             <span class="badge badge-gray">GDE Medium</span>
           </div>
-          <a href="https://medium.com/google-developer-experts/google-antigravity-2-0-gemini-3-5-flash-the-ai-that-codes-tests-and-ships-without-you-24dc2dc2ba47" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/google-developer-experts/google-antigravity-2-0-gemini-3-5-flash-the-ai-that-codes-tests-and-ships-without-you-24dc2dc2ba47" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Vertex AI Is Gone ── -->
       <div class="blog-full-card reveal" data-blog-cat="vertex">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#1e3a5f,#0f2340);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#091629,#090d16);">
           <span style="font-size:3.5rem;">🔄</span>
         </div>
         <div class="blog-full-body">
@@ -101,13 +116,13 @@
             <span class="badge badge-gray">Google Cloud</span>
             <span class="badge badge-gray">Platform Update</span>
           </div>
-          <a href="https://medium.com/google-developer-experts/vertex-ai-is-gone-here-is-what-google-built-instead-92556d1c64eb" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/google-developer-experts/vertex-ai-is-gone-here-is-what-google-built-instead-92556d1c64eb" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: LexiMini ── -->
       <div class="blog-full-card reveal" data-blog-cat="vertex">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#0d0c1c,#0a0b14);">
           <span style="font-size:3.5rem;">⚖️</span>
         </div>
         <div class="blog-full-body">
@@ -124,13 +139,13 @@
             <span class="badge badge-gray">Legal AI</span>
             <span class="badge badge-gray">India</span>
           </div>
-          <a href="https://medium.com/google-developer-experts/%EF%B8%8F-leximini-how-i-built-an-ai-legal-assistant-for-india-from-scratch-on-a-tpu-f8354e20cbc9" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/google-developer-experts/%EF%B8%8F-leximini-how-i-built-an-ai-legal-assistant-for-india-from-scratch-on-a-tpu-f8354e20cbc9" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Vertex AI Pipelines ── -->
       <div class="blog-full-card reveal" data-blog-cat="vertex">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#0369a1,#075985);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#022c42,#031f2e);">
           <span style="font-size:3.5rem;">🔧</span>
         </div>
         <div class="blog-full-body">
@@ -146,13 +161,13 @@
             <span class="badge badge-teal">Pipelines</span>
             <span class="badge badge-gray">MLOps</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Google Antigravity + MCP ── -->
       <div class="blog-full-card reveal" data-blog-cat="agents">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#312e81,#1e1b4b);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#0e0d21,#07060f);">
           <span style="font-size:3.5rem;">🚀</span>
         </div>
         <div class="blog-full-body">
@@ -169,13 +184,13 @@
             <span class="badge badge-gray">Google Antigravity</span>
             <span class="badge badge-gray">GitHub</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Beyond API Calls ── -->
       <div class="blog-full-card reveal" data-blog-cat="agents">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#065f46,#064e3b);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#02241b,#01120d);">
           <span style="font-size:3.5rem;">🤖</span>
         </div>
         <div class="blog-full-body">
@@ -192,13 +207,13 @@
             <span class="badge badge-gray">GKE</span>
             <span class="badge badge-gray">Agents</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Personal AI in Pharma ── -->
       <div class="blog-full-card reveal" data-blog-cat="gemma">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#7c3aed,#5b21b6);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#2f1263,#1c093d);">
           <span style="font-size:3.5rem;">💊</span>
         </div>
         <div class="blog-full-body">
@@ -215,13 +230,13 @@
             <span class="badge badge-gray">Healthcare</span>
             <span class="badge badge-gray">On-Premise</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Coffee AI Agent ── -->
       <div class="blog-full-card reveal" data-blog-cat="gemma">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#78350f,#451a03);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#2e1201,#1a0900);">
           <span style="font-size:3.5rem;">☕</span>
         </div>
         <div class="blog-full-body">
@@ -237,13 +252,13 @@
             <span class="badge badge-teal">Google ADK</span>
             <span class="badge badge-gray">Agents</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Multi-Agent System ── -->
       <div class="blog-full-card reveal" data-blog-cat="agents">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#134e4a,#0f3d39);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#051e1c,#020f0e);">
           <span style="font-size:3.5rem;">🕸️</span>
         </div>
         <div class="blog-full-body">
@@ -259,13 +274,13 @@
             <span class="badge badge-teal">Multi-Agent</span>
             <span class="badge badge-gray">Research</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: LangChain + Gemini ── -->
       <div class="blog-full-card reveal" data-blog-cat="langchain">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#1e3a5f,#0f2340);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#091629,#090d16);">
           <span style="font-size:3.5rem;">🔗</span>
         </div>
         <div class="blog-full-body">
@@ -281,13 +296,13 @@
             <span class="badge badge-teal">Gemini</span>
             <span class="badge badge-gray">Python</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: Meet GEMMA ── -->
       <div class="blog-full-card reveal" data-blog-cat="gemma">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#14532d,#052e16);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#082110,#041208);">
           <span style="font-size:3.5rem;">💎</span>
         </div>
         <div class="blog-full-body">
@@ -303,13 +318,13 @@
             <span class="badge badge-gray">Open Source</span>
             <span class="badge badge-gray">Google</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
       <!-- ── ARTICLE: How Safe is Your Data ── -->
       <div class="blog-full-card reveal" data-blog-cat="vertex">
-        <div class="blog-full-img" style="background:linear-gradient(135deg,#1e293b,#0f172a);">
+        <div class="blog-full-img" style="background:linear-gradient(135deg,#0c0e12,#06070a);">
           <span style="font-size:3.5rem;">🔐</span>
         </div>
         <div class="blog-full-body">
@@ -325,26 +340,31 @@
             <span class="badge badge-gray">LLM</span>
             <span class="badge badge-gray">Enterprise</span>
           </div>
-          <a href="https://medium.com/@Geetakakrani" target="_blank" class="blog-cta">Read on Medium →</a>
+          <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="blog-cta">Read on Medium →</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Medium CTA -->
+  <!-- CTA -->
   <section class="newsletter-section">
     <div class="newsletter-inner">
       <h2>36 Articles and Counting</h2>
-      <p>Published in Google Developer Experts, Google Cloud Community, and Python in Plain English. Follow on Medium for new articles every few weeks.</p>
-      <a href="https://medium.com/@Geetakakrani" target="_blank" class="btn btn-lg" style="background:var(--white); color:var(--gray-900); font-weight:600; display:inline-flex; gap:10px;">
-        ✍️ Follow on Medium
+      <p>Published regularly in Google Developer Experts, Google Cloud Community, and Python in Plain English. Follow on Medium to receive notifications of new tutorials.</p>
+      <a href="https://medium.com/@Geetakakrani" target="_blank" rel="noopener" class="btn btn-lg btn-primary">
+        <i class="bi bi-medium"></i> Follow on Medium
       </a>
     </div>
   </section>
 
+  <!-- Footer Placeholder -->
   <div id="footer-placeholder"></div>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
   <script src="../js/components.js"></script>
   <script src="../js/main.js"></script>
 
@@ -366,6 +386,5 @@
       });
     });
   </script>
-
 </body>
 </html>
