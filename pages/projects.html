@@ -3,195 +3,489 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Geeta Kakrani | Open Source AI Labs</title>
-  <meta name="description" content="Explore open-source AI projects, machine learning models, and agent implementations built by Geeta Kakrani." />
+  <title>AI Work — Geeta Kakrani | Projects &amp; Case Studies</title>
+  <meta name="description" content="Real AI projects and case studies by Geeta Kakrani — Google Developer Expert. Legal AI on TPU, hybrid cost infrastructure, on-device AI, multi-agent systems, and more." />
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/pages.css" />
+
   <style>
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 28px;
+    /* ── Filter bar ── */
+    .work-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 52px;
     }
-    .project-card {
-      background: var(--bg-dark-card);
+    .work-filter-btn {
+      padding: 8px 20px;
+      border-radius: 50px;
       border: 1px solid var(--border-glass);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      transition: all 0.3s var(--ease-premium);
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .work-filter-btn:hover,
+    .work-filter-btn.active {
+      background: rgba(0,212,170,0.1);
+      border-color: var(--primary-teal);
+      color: var(--primary-teal);
+    }
+
+    /* ── Work card ── */
+    .work-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
       height: 100%;
-      position: relative;
-      overflow: hidden;
     }
-    .project-card:hover {
-      border-color: var(--border-glass-hover);
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg), 0 0 15px rgba(20,184,166,0.1);
-      background: var(--bg-dark-card-hover);
+    .work-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0,212,170,0.35);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35), 0 0 25px rgba(0,212,170,0.08);
     }
-    .project-icon {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+    .work-card-top {
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid var(--border-glass);
     }
-    .project-title {
-      font-size: 1.25rem;
+    .work-domain-tag {
+      display: inline-block;
+      font-size: 0.7rem;
       font-weight: 700;
-      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .tag-legalai   { background: rgba(251,191,36,0.1);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.2); }
+    .tag-cost      { background: rgba(34,197,94,0.1);   color: #22c55e; border: 1px solid rgba(34,197,94,0.2); }
+    .tag-ondevice  { background: rgba(168,85,247,0.1);  color: #a855f7; border: 1px solid rgba(168,85,247,0.2); }
+    .tag-agents    { background: rgba(0,212,170,0.1);   color: var(--primary-teal); border: 1px solid rgba(0,212,170,0.2); }
+    .tag-research  { background: rgba(59,130,246,0.1);  color: #3b82f6; border: 1px solid rgba(59,130,246,0.2); }
+    .tag-data      { background: rgba(239,68,68,0.1);   color: #ef4444; border: 1px solid rgba(239,68,68,0.2); }
+
+    .work-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
       color: var(--text-primary);
+      line-height: 1.35;
     }
-    .project-desc {
-      font-size: 0.88rem;
+    .work-problem {
+      font-size: 0.85rem;
       color: var(--text-secondary);
-      line-height: 1.7;
-      margin-bottom: 24px;
-      flex-grow: 1;
+      line-height: 1.65;
+      margin: 0;
     }
-    .project-meta {
+
+    .work-card-body {
+      padding: 22px 28px 28px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .work-section-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary-teal);
+      margin-bottom: 5px;
+    }
+    .work-approach {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .work-outcome {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+      padding: 12px 14px;
+      background: rgba(0,212,170,0.05);
+      border-left: 3px solid var(--primary-teal);
+      border-radius: 0 8px 8px 0;
+    }
+    .work-tech-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .work-tech-tag {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-glass);
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .work-card-footer {
+      padding: 16px 28px;
+      border-top: 1px solid var(--border-glass);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      padding-top: 18px;
-      margin-top: auto;
     }
-    .project-lang {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--primary-teal);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .project-lang-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--primary-teal);
-      border-radius: 50%;
-      box-shadow: 0 0 6px var(--primary-teal);
-    }
-    .project-link {
-      font-size: 0.85rem;
+    .work-card-footer a {
+      font-size: 0.83rem;
       font-weight: 600;
       color: var(--primary-teal);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
+      transition: color 0.2s;
     }
-    .project-link:hover {
-      color: var(--primary-cyan);
+    .work-card-footer a:hover { color: var(--primary-cyan); }
+    .work-status {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .status-open   { background: rgba(34,197,94,0.1); color: #22c55e; }
+    .status-active { background: rgba(0,212,170,0.1); color: var(--primary-teal); }
+    .status-poc    { background: rgba(168,85,247,0.1); color: #a855f7; }
+
+    /* ── Featured card (full width) ── */
+    .work-card-featured {
+      border-color: rgba(0,212,170,0.3);
+      background: linear-gradient(135deg, rgba(0,212,170,0.04), rgba(123,97,255,0.04));
+    }
+    .work-card-featured:hover { border-color: rgba(0,212,170,0.6); }
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Placeholder -->
   <div id="nav-placeholder"></div>
 
-  <!-- PAGE HERO -->
+  <!-- HERO -->
   <section class="page-hero">
     <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
     <div class="container">
       <div class="page-hero-breadcrumb">Home / Projects</div>
-      <h1>Open Source Projects &amp; Labs</h1>
-      <p>A collection of machine learning pipelines, AI orchestrators, custom agents, and developer utilities built with Gemini, Gemma, and Google's SDKs.</p>
+      <h1>AI Work &amp; Case Studies</h1>
+      <p style="max-width:620px; margin:0 auto;">
+        Real problems. Real constraints. Real outcomes. A selection of AI systems I've designed, built, and shipped — across legal tech, cost optimization, on-device AI, and multi-agent infrastructure.
+      </p>
     </div>
   </section>
 
-  <!-- PROJECTS GRID -->
+  <!-- WORK GRID -->
   <section class="section">
     <div class="container">
-      <div class="project-grid">
-        
-        <!-- Project 1 -->
-        <div class="project-card reveal">
-          <div class="project-icon">🤖</div>
-          <h3 class="project-title">LexiMini Legal Assistant</h3>
-          <p class="project-desc">A domain-specific AI legal assistant specialized in Indian law, fine-tuned and hosted using Google Cloud TPUs and Vertex AI endpoints.</p>
-          <div class="project-meta">
-            <span class="project-lang">
-              <span class="project-lang-dot"></span> Python
-            </span>
-            <a href="https://github.com/geeta-gwalior/LexiMini" target="_blank" rel="noopener" class="project-link">View Repo →</a>
-          </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-icon">☕</div>
-          <h3 class="project-title">Indian Coffee AI Agent</h3>
-          <p class="project-desc">Personalized AI recommendations engine orchestrator built on Google Gemma 3 and AGY SDK. Learns user preferences over conversation loops.</p>
-          <div class="project-meta">
-            <span class="project-lang">
-              <span class="project-lang-dot"></span> Python
-            </span>
-            <a href="https://github.com/geeta-gwalior/coffee-agent" target="_blank" rel="noopener" class="project-link">View Repo →</a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-icon">🔗</div>
-          <h3 class="project-title">LangGraph Multi-Agent Setup</h3>
-          <p class="project-desc">Template repository for orchestrating collaborative AI teams (planners, researchers, and editors) leveraging Gemini Flash.</p>
-          <div class="project-meta">
-            <span class="project-lang">
-              <span class="project-lang-dot" style="background: var(--primary-violet); box-shadow: 0 0 6px var(--primary-violet);"></span> TypeScript
-            </span>
-            <a href="https://github.com/geeta-gwalior/langgraph-gemini-starter" target="_blank" rel="noopener" class="project-link">View Repo →</a>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card reveal">
-          <div class="project-icon">⚙️</div>
-          <h3 class="project-title">Vertex AI Pipelines Helper</h3>
-          <p class="project-desc">Custom CLI scripts to automate MLOps setups, Kubeflow DSL compilations, and model deployment triggers on Vertex AI.</p>
-          <div class="project-meta">
-            <span class="project-lang">
-              <span class="project-lang-dot"></span> Python
-            </span>
-            <a href="https://github.com/geeta-gwalior/vertex-pipelines-cli" target="_blank" rel="noopener" class="project-link">View Repo →</a>
-          </div>
-        </div>
-
+      <!-- Filter -->
+      <div class="work-filter-bar" id="workFilters">
+        <button class="work-filter-btn active" data-filter="all">All Work</button>
+        <button class="work-filter-btn" data-filter="agents">Agentic AI</button>
+        <button class="work-filter-btn" data-filter="cost">Cost &amp; Infrastructure</button>
+        <button class="work-filter-btn" data-filter="legalai">Legal AI</button>
+        <button class="work-filter-btn" data-filter="ondevice">On-Device AI</button>
+        <button class="work-filter-btn" data-filter="research">Research &amp; Data</button>
       </div>
+
+      <div class="row g-4" id="workGrid">
+
+        <!-- ── FEATURED: LexiMini ── -->
+        <div class="col-12 reveal" data-work-cat="legalai">
+          <div class="work-card work-card-featured">
+            <div class="work-card-top">
+              <div class="featured-badge">&#x2B50; Featured Project</div>
+              <div class="work-domain-tag tag-legalai">Legal AI &middot; AI-TPU Specialization</div>
+              <h3>LexiMini — AI Legal Assistant for India, Built on Google TPU</h3>
+              <p class="work-problem">
+                <strong style="color:var(--text-primary);">The problem:</strong> Indian legal professionals had no AI tool trained on Indian law — generic LLMs hallucinate extensively on IPC, CrPC, and case law. The challenge was domain adaptation with limited compute budget.
+              </p>
+            </div>
+            <div class="work-card-body">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="work-section-label">Approach</div>
+                  <p class="work-approach">Fine-tuned a Gemma base model on a curated Indian legal corpus using Google Cloud TPU v4 pods — dramatically reducing fine-tuning cost vs GPU. Built a retrieval layer over Indian Kanoon case law with PGVector for grounded responses. Deployed on Vertex AI with custom evaluation pipeline to track hallucination rate.</p>
+                </div>
+                <div class="col-md-6">
+                  <div class="work-section-label">Key Outcome</div>
+                  <p class="work-outcome">&#x2705; TPU fine-tuning cost 60–70% less than equivalent GPU run. Domain-specific accuracy significantly outperformed base Gemini on Indian legal queries. Demonstrated viability of specialized legal AI for Indian market at accessible cost.</p>
+                  <div class="work-tech-row mt-3">
+                    <span class="work-tech-tag">Google TPU v4</span>
+                    <span class="work-tech-tag">Gemma Fine-tuning</span>
+                    <span class="work-tech-tag">Vertex AI</span>
+                    <span class="work-tech-tag">PGVector</span>
+                    <span class="work-tech-tag">Indian Kanoon</span>
+                    <span class="work-tech-tag">RAG</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/Leximini_AI" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Hybrid Cost Infrastructure ── -->
+        <div class="col-md-6 reveal" data-work-cat="cost">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-cost">AI Cost Optimization</div>
+              <h3>Hybrid Multi-Model Infrastructure to Cut AI Costs by 60%</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> Engineering teams routing all queries to Gemini 2.5 Pro — overkill for 70% of tasks, driving up costs with no accuracy benefit.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Designed a semantic complexity router that classifies incoming queries and dispatches: low-complexity tasks to Gemma 3 on Vertex AI (2B model), high-reasoning tasks to Gemini 2.5 Flash. Routing logic built with LangGraph, latency monitored via custom Cloud Logging dashboard.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; ~60% reduction in API costs. Response quality maintained or improved for complex tasks. Architecture now used as reference implementation for cost-efficient LLM routing.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">Gemma 3</span>
+                <span class="work-tech-tag">Gemini 2.5 Flash</span>
+                <span class="work-tech-tag">Vertex AI</span>
+                <span class="work-tech-tag">LangGraph</span>
+                <span class="work-tech-tag">Cloud Logging</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/Reducing-AI-Costs-via-Hybrid-Multi-Model-Infrastructure" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── On-Device Flutter ── -->
+        <div class="col-md-6 reveal reveal-delay-1" data-work-cat="ondevice">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-ondevice">On-Device AI &middot; Privacy</div>
+              <h3>Fully Offline AI Chatbot on Android — No Server, No Cloud</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> Healthcare and legal apps need AI inference without sending sensitive user data to cloud APIs. On-device AI was the only viable path.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Deployed Gemma 2B on Android using Google MediaPipe LLM Inference API, integrated into a Flutter app with a native chat UI. Quantized model to INT4 for device memory constraints. No network calls during inference — full data sovereignty.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; Sub-2s first token on mid-range Android. Complete user privacy — zero data leaves the device. Accompanied by public codelab used in GDE workshops.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">Gemma 2B INT4</span>
+                <span class="work-tech-tag">MediaPipe</span>
+                <span class="work-tech-tag">Flutter</span>
+                <span class="work-tech-tag">On-device Inference</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/gemma-flutter-chatbot" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Multi-Agent Research System ── -->
+        <div class="col-md-6 reveal" data-work-cat="agents">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-agents">Agentic AI &middot; Research Automation</div>
+              <h3>AI Research Workflow Automation with On-Premise Models</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> Research teams processing sensitive internal documents couldn't use cloud APIs. Needed fully local AI research automation.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Configured OpenClaw with Docker, connected to a local Ollama runtime running Gemma 3. Built document ingestion pipeline, semantic search over internal corpus, and automated report synthesis — entirely air-gapped. No data leaves the company network.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; Full on-premise AI research pipeline. Sensitive data never leaves internal network. Cuts research synthesis time from hours to minutes.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">OpenClaw</span>
+                <span class="work-tech-tag">Ollama</span>
+                <span class="work-tech-tag">Gemma 3</span>
+                <span class="work-tech-tag">Docker</span>
+                <span class="work-tech-tag">Local RAG</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/AI-Driven-Research-Workflows-with-OpenClaw" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Multi-Agent CrewAI ── -->
+        <div class="col-md-6 reveal reveal-delay-1" data-work-cat="agents">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-agents">Agentic AI &middot; Multi-Agent</div>
+              <h3>Production Multi-Agent System with Specialized AI Roles</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> Single LLM calls fail for complex multi-step tasks that need planning, research, writing, and review — each requiring different reasoning modes.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Built a CrewAI + Gemini architecture with four specialized agents: Planner (task decomposition), Researcher (web + corpus retrieval), Writer (structured output), Reviewer (quality gate). Each agent has distinct tools, memory, and termination criteria.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; Measurably higher output quality vs single-agent on complex tasks. Reusable framework now used as template for 3 corporate AI projects.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">CrewAI</span>
+                <span class="work-tech-tag">Gemini AI</span>
+                <span class="work-tech-tag">LangChain Tools</span>
+                <span class="work-tech-tag">Multi-Agent</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/MultiAgent_GeminiAi" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Analytica CSV ── -->
+        <div class="col-md-6 reveal" data-work-cat="data">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-data">Data AI &middot; Local Inference</div>
+              <h3>Natural Language → Business Dashboard (No Cloud Required)</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> SMBs with sensitive business data (sales, inventory) couldn't use cloud AI for analytics. Needed a local, conversational data tool.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Built Analytica Agent — a local GenAI agent using Ollama + Gemma that accepts CSV uploads, understands natural language questions, generates Pandas queries, and renders interactive Plotly dashboards. Fully local, no API keys needed.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; Non-technical business users can query their own data in plain English. Zero data privacy risk. Runs on standard hardware.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">Gemma</span>
+                <span class="work-tech-tag">Ollama</span>
+                <span class="work-tech-tag">Pandas</span>
+                <span class="work-tech-tag">Plotly</span>
+                <span class="work-tech-tag">Local AI</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/Analytica-Agent" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-open">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Antigravity 2.0 ── -->
+        <div class="col-md-6 reveal reveal-delay-1" data-work-cat="research">
+          <div class="work-card">
+            <div class="work-card-top">
+              <div class="work-domain-tag tag-research">Research &middot; Developer Tools</div>
+              <h3>Antigravity 2.0 — End-to-End Agentic Dev Platform Evaluation</h3>
+              <p class="work-problem"><strong style="color:var(--text-primary);">The problem:</strong> Practitioners lacked hands-on documentation of Google Antigravity's agentic capabilities — CLI, SDK, MCP integration — for real production workflows.</p>
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-section-label">Approach</div>
+                <p class="work-approach">Built a comprehensive codelab and reference implementation covering Antigravity Desktop App, the <code>agy</code> CLI, and Python SDK. Documented multi-agent orchestration patterns, MCP server integration, and production deployment from a practitioner's lens.</p>
+              </div>
+              <div>
+                <div class="work-section-label">Outcome</div>
+                <p class="work-outcome">&#x2705; Used in GDE workshops and community talks. Codelab live at GitHub Pages. Practical reference for teams adopting Antigravity in production.</p>
+              </div>
+              <div class="work-tech-row">
+                <span class="work-tech-tag">Antigravity 2.0</span>
+                <span class="work-tech-tag">AGY SDK</span>
+                <span class="work-tech-tag">MCP</span>
+                <span class="work-tech-tag">Python</span>
+              </div>
+            </div>
+            <div class="work-card-footer">
+              <a href="https://github.com/geeta-gwalior/Antigravity_2.0" target="_blank" rel="noopener">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+              <span class="work-status status-active">GDE Work</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
     </div>
   </section>
 
   <!-- CTA -->
   <section class="newsletter-section">
     <div class="newsletter-inner">
-      <h2>Explore All Repositories</h2>
-      <p>Find more scripts, templates, and libraries directly on GitHub. Open issues, forks, and contributions are always welcome!</p>
-      <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" class="btn btn-lg btn-primary">
-        <i class="bi bi-github"></i> Follow on GitHub
-      </a>
+      <h2>Have a Similar Problem?</h2>
+      <p>These are the kinds of challenges I solve as an AI Consultant — cost, architecture, on-device AI, agentic systems. If your team is stuck on something similar, let's talk.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="consulting.html#contact" class="btn btn-lg btn-primary">Discuss Your Problem &rarr;</a>
+        <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">
+          <i class="bi bi-github"></i> All Repos on GitHub
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer Placeholder -->
   <div id="footer-placeholder"></div>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-  <!-- Custom Scripts -->
   <script src="../js/components.js"></script>
   <script src="../js/main.js"></script>
+
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.work-filter-btn');
+    const workCards = document.querySelectorAll('#workGrid > [data-work-cat]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        workCards.forEach(card => {
+          const cats = card.dataset.workCat;
+          card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>

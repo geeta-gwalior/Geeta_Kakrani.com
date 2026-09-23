@@ -13,7 +13,7 @@ const NAV_HTML = `
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="../pages/about.html">About</a>
-      <a href="../pages/tutorials.html">Tutorials</a>
+      <a href="../pages/projects.html">Projects</a>
       <a href="../pages/talks.html">Talks</a>
       <a href="../pages/consulting.html">Consulting</a>
       <a href="../pages/blog.html">Blog</a>
@@ -30,7 +30,7 @@ const NAV_HTML = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="../index.html">Home</a>
   <a href="../pages/about.html">About</a>
-  <a href="../pages/tutorials.html">Tutorials</a>
+  <a href="../pages/projects.html">Projects</a>
   <a href="../pages/talks.html">Talks</a>
   <a href="../pages/consulting.html">Consulting</a>
   <a href="../pages/blog.html">Blog</a>
@@ -91,7 +91,7 @@ const NAV_HTML_HOME = `
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="pages/about.html">About</a>
-      <a href="pages/tutorials.html">Tutorials</a>
+      <a href="pages/projects.html">Projects</a>
       <a href="pages/talks.html">Talks</a>
       <a href="pages/consulting.html">Consulting</a>
       <a href="pages/blog.html">Blog</a>
@@ -108,7 +108,7 @@ const NAV_HTML_HOME = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="pages/about.html">About</a>
-  <a href="pages/tutorials.html">Tutorials</a>
+  <a href="pages/projects.html">Projects</a>
   <a href="pages/talks.html">Talks</a>
   <a href="pages/consulting.html">Consulting</a>
   <a href="pages/blog.html">Blog</a>
