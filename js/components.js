@@ -48,7 +48,7 @@ const FOOTER_HTML = `
           <div class="footer-logo-name">Geeta Kakrani</div>
           <div class="footer-logo-title">AI Consultant · GDE · Speaker</div>
         </div>
-        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru. 70+ talks. 20+ years in tech.</p>
+        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
@@ -126,7 +126,7 @@ const FOOTER_HTML_HOME = `
           <div class="footer-logo-name">Geeta Kakrani</div>
           <div class="footer-logo-title">AI Consultant · GDE · Speaker</div>
         </div>
-        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru. 90+ talks. 20+ years in tech.</p>
+        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>

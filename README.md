@@ -4,7 +4,7 @@ This repository is the companion project for the talk "Vibe Coding to Production
 
 It demonstrates the full journey of an AI-built application — starting as a single natural-language prompt ("vibe coding") and evolving into a production-deployed, multi-agent orchestrated, MCP-integrated web application, built almost entirely by autonomous agents inside Google Antigravity 2.0.
 
-The portfolio itself belongs to Geeta Kakrani — AI/ML Researcher, Google Developer Expert (GDE — AI & TPU), and founder of Kanishka IT — and serves as both a real-world case study and a working personal brand asset.
+The portfolio itself belongs to Geeta Kakrani — AI/ML Researcher, Google Developer Expert (GDE — AI & TPU), and Independent AI Consultant (Ex-founder of Kanishka IT, 2010–2025) — and serves as both a real-world case study and a working personal brand asset.
 
 
 ✨ Features
@@ -15,7 +15,7 @@ The entire site — structure, content sections, and styling — was planned and
 🏠 Home & About — Personal brand intro and background
 🛠️ Services — AI consulting offerings
 📊 Case Studies — Real project breakdowns
-🎤 Talks — Archive of 90+ AI talks and sessions
+🎤 Talks — Archive of technical talks and sessions
 📚 Tutorials — Hands-on learning content
 ✍️ Blog — Technical write-ups (e.g. "Vertex AI Is Gone. Here Is What Google Built Instead", "LexiMini: How I Built an AI Legal Assistant for India — From Scratch, on a TPU")
 🎥 Media — Talks, interviews, and recordings
