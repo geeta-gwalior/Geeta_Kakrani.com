@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Consulting — Geeta Kakrani | Fractional AI Advisor · Bengaluru</title>
+  <meta name="description" content="Hire Geeta Kakrani as your AI Consultant in Bengaluru. Google Developer Expert offering Fractional AI Advisory, AI Strategy, AI Audits, and Corporate AI Training. Specializing in AI-TPU, Gemma, ML/DL/NLP." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+
+  <style>
+    .consulting-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,212,170,0.08);
+      border: 1px solid rgba(0,212,170,0.25);
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--primary-teal);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .consulting-hero-badge span {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--primary-teal);
+      box-shadow: 0 0 8px var(--primary-teal);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 36px 28px;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary-teal);
+      box-shadow: 0 0 30px rgba(0,212,170,0.12);
+    }
+    .service-icon { font-size: 2.4rem; margin-bottom: 20px; display: block; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary); }
+    .service-card p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-bottom: 16px; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .service-tag {
+      font-size: 0.72rem; padding: 3px 10px; border-radius: 20px;
+      background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.2);
+      color: var(--primary-teal); font-weight: 500;
+    }
+    .process-step { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 32px; }
+    .process-step-num {
+      min-width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-teal), var(--primary-violet));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 800; color: #fff; flex-shrink: 0;
+    }
+    .process-step-body h4 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; color: var(--text-primary); }
+    .process-step-body p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; margin: 0; }
+    .training-banner {
+      background: linear-gradient(135deg, rgba(0,212,170,0.06), rgba(123,97,255,0.06));
+      border: 1px solid var(--border-glass); border-radius: 20px; padding: 48px 40px;
+    }
+    .training-card {
+      background: var(--card-bg); border: 1px solid var(--border-glass);
+      border-radius: 14px; padding: 24px; transition: border-color 0.3s; height: 100%;
+    }
+    .training-card:hover { border-color: rgba(0,212,170,0.4); }
+    .training-card h5 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
+    .training-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.6; }
+    .contact-card {
+      background: var(--card-bg); border: 1px solid var(--border-glass);
+      border-radius: 20px; padding: 48px 40px;
+    }
+    .contact-card label {
+      font-size: 0.82rem; font-weight: 600; color: var(--text-secondary);
+      letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; display: block;
+    }
+    .contact-card input,
+    .contact-card select,
+    .contact-card textarea {
+      width: 100%; background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-glass); border-radius: 10px;
+      padding: 12px 16px; color: var(--text-primary); font-size: 0.92rem;
+      font-family: inherit; margin-bottom: 20px; transition: border-color 0.25s; outline: none;
+    }
+    .contact-card input:focus,
+    .contact-card select:focus,
+    .contact-card textarea:focus {
+      border-color: var(--primary-teal); box-shadow: 0 0 0 3px rgba(0,212,170,0.1);
+    }
+    .contact-card select option { background: #0f1117; }
+    .contact-card textarea { resize: vertical; min-height: 120px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .trust-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass);
+      border-radius: 50px; padding: 7px 16px; font-size: 0.82rem; color: var(--text-secondary);
+    }
+    .trust-pill i { color: var(--primary-teal); }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="glow-blob blob-teal" style="top: -100px; right: -50px;"></div>
+    <div class="glow-blob blob-violet" style="bottom: -80px; left: -60px;"></div>
+    <div class="container">
+      <div class="page-hero-breadcrumb">Home / Consulting</div>
+      <div class="consulting-hero-badge"><span></span> Available for Consulting &middot; Bengaluru</div>
+      <h1>AI Consulting &amp; Advisory</h1>
+      <p class="text-gradient-cyan-teal font-semibold">Fractional AI Advisor &middot; AI Strategy &middot; AI Audit &middot; Corporate AI Training</p>
+      <p style="max-width:620px; margin:16px auto 0; color:var(--text-secondary); font-size:1rem; line-height:1.7;">
+        20+ years in tech. GDE in AI/ML. 90+ talks. I help companies move beyond AI experiments — into production systems that actually work.
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+        <a href="#contact" class="btn btn-primary btn-lg">Let's Talk &rarr;</a>
+        <a href="about.html" class="btn btn-secondary btn-lg">My Background</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section class="section" style="background:#090b11; border-top:1px solid var(--border-glass); border-bottom:1px solid var(--border-glass);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">Who I Work With</div>
+        <h2>Is This For You?</h2>
+        <p class="section-intro">I work best with teams that have a real AI problem — not just a curiosity.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 reveal">
+          <div class="service-card text-center">
+            <span class="service-icon">&#x1F3E2;</span>
+            <h3>Startups &amp; Scale-ups</h3>
+            <p>You have a product idea involving AI but don't know where to start — model selection, infra, cost. I help you skip 6 months of trial and error.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal reveal-delay-1">
+          <div class="service-card text-center">
+            <span class="service-icon">&#x2699;&#xFE0F;</span>
+            <h3>Engineering Teams</h3>
+            <p>Your team is building an AI feature but stuck on architecture, hallucination, latency, or cloud costs. I review, advise, and unblock you fast.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal reveal-delay-2">
+          <div class="service-card text-center">
+            <span class="service-icon">&#x1F3DB;&#xFE0F;</span>
+            <h3>Enterprises &amp; Colleges</h3>
+            <p>You need structured AI upskilling for your team or students — from fundamentals to production-grade systems. Delivered by a GDE, not a generic trainer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-label">What I Offer</div>
+        <h2>Consulting Services</h2>
+        <p class="section-intro">Four clear ways to work with me — pick what fits your need.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="service-card">
+            <span class="service-icon">&#x1F9ED;</span>
+            <h3>Fractional AI Advisor</h3>
+            <p>Your on-call AI expert. I join your team part-time — attending key meetings, reviewing decisions, and making sure your AI roadmap is grounded in reality. No full-time hire needed.</p>
+            <div class="service-tags">
+              <span class="service-tag">Weekly/Monthly retainer</span>
+              <span class="service-tag">AI Roadmap</span>
+              <span class="service-tag">Decision Support</span>
+              <span class="service-tag">GDE Credibility</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal reveal-delay-1">
+          <div class="service-card">
+            <span class="service-icon">&#x1F50D;</span>
+            <h3>AI Audit</h3>
+            <p>A deep-dive review of your current AI system — model choices, prompt quality, cost structure, hallucination risk, latency bottlenecks. Written report with prioritized fixes.</p>
+            <div class="service-tags">
+              <span class="service-tag">One-time engagement</span>
+              <span class="service-tag">Written Report</span>
+              <span class="service-tag">Cost Analysis</span>
+              <span class="service-tag">Architecture Review</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="service-card">
+            <span class="service-icon">&#x1F5FA;&#xFE0F;</span>
+            <h3>AI Strategy Workshop</h3>
+            <p>Half-day or full-day workshop for your leadership or product team. We map use cases, identify where AI adds real value, pick the right tools, and build a 90-day execution plan.</p>
+            <div class="service-tags">
+              <span class="service-tag">In-person · Bengaluru</span>
+              <span class="service-tag">Remote available</span>
+              <span class="service-tag">90-day Plan</span>
+              <span class="service-tag">Use-case Mapping</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal reveal-delay-1">
+          <div class="service-card">
+            <span class="service-icon">&#x1F527;</span>
+            <h3>Hands-on POC Build</h3>
+            <p>Need a proof-of-concept built fast? RAG pipeline, agentic system, fine-tuned model, or AI cost optimization. I build it with you, document it, and hand it off cleanly.</p>
+            <div class="service-tags">
+              <span class="service-tag">Project-based</span>
+              <span class="service-tag">AI-TPU Specialist</span>
+              <span class="service-tag">Gemma Models</span>
+              <span class="service-tag">RAG / Agents</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background:#090b11; border-top:1px solid var(--border-glass); border-bottom:1px solid var(--border-glass);">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="section-label">Process</div>
+          <h2 class="mb-4">How We Work Together</h2>
+          <p class="text-secondary">Simple, no-fluff engagement. From first message to first deliverable — usually within a week.</p>
+          <div class="trust-row">
+            <div class="trust-pill"><i class="bi bi-patch-check-fill"></i> Google Developer Expert</div>
+            <div class="trust-pill"><i class="bi bi-mic-fill"></i> 90+ AI Talks</div>
+            <div class="trust-pill"><i class="bi bi-building"></i> 15 yrs KanishkaIT</div>
+            <div class="trust-pill"><i class="bi bi-geo-alt-fill"></i> Based in Bengaluru</div>
+            <div class="trust-pill"><i class="bi bi-linkedin"></i> 7k LinkedIn Followers</div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 reveal reveal-delay-2">
+          <div class="process-step">
+            <div class="process-step-num">1</div>
+            <div class="process-step-body">
+              <h4>Short Intro Call (30 min, Free)</h4>
+              <p>Tell me what you're building or struggling with. I'll tell you honestly if I can help — and how.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">2</div>
+            <div class="process-step-body">
+              <h4>Proposal &amp; Scope</h4>
+              <p>I send a clear proposal — deliverables, timeline, and pricing. No vague "it depends" answers.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">3</div>
+            <div class="process-step-body">
+              <h4>Engagement Starts</h4>
+              <p>We get to work. Regular check-ins, clear outputs, and direct Slack/WhatsApp access throughout.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">4</div>
+            <div class="process-step-body">
+              <h4>Handoff &amp; Support</h4>
+              <p>Everything documented. Your team can run it independently — or we continue on retainer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING (Secondary) -->
+  <section class="section">
+    <div class="container">
+      <div class="training-banner reveal">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-5">
+            <div class="section-label">Also Available</div>
+            <h2 class="mb-3">AI Training &amp; Workshops</h2>
+            <p class="text-secondary mb-4">
+              After 15 years of teaching — IIT students, corporate teams, and online cohorts — I know how to make complex AI actually stick. Training isn't my primary focus anymore, but if your team needs structured AI upskilling from a practitioner who <em>also</em> consults, I'm available.
+            </p>
+            <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" class="btn btn-secondary">Message on LinkedIn &rarr;</a>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="training-card">
+                  <h5>&#x1F393; Online Cohorts</h5>
+                  <p>ML, DL, NLP, Agentic AI — structured cohorts for professionals and students. Announced via LinkedIn &amp; YouTube.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="training-card">
+                  <h5>&#x1F3E2; Corporate Training</h5>
+                  <p>Custom AI workshops for engineering teams — from AI basics to production RAG pipelines. In Bengaluru or remote.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="training-card">
+                  <h5>&#x1F3A4; Conference Talks</h5>
+                  <p>90+ talks delivered. Available for DevFests, AI summits, college events. Topics: Gemma, AI-TPU, LLMs, cost efficiency.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="training-card">
+                  <h5>&#x1F4DA; 1-on-1 Mentoring</h5>
+                  <p>For individuals transitioning into AI or engineers going deeper. Limited slots — reach out on LinkedIn.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" style="background:#090b11; border-top:1px solid var(--border-glass);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card reveal">
+            <div class="text-center mb-5">
+              <div class="section-label">Get in Touch</div>
+              <h2>Let's Work Together</h2>
+              <p class="text-secondary">Fill in the details below and I'll respond within 24 hours. Or message me directly on LinkedIn.</p>
+            </div>
+
+            <form id="consultingForm" onsubmit="handleFormSubmit(event)">
+              <div class="row g-0">
+                <div class="col-md-6 pe-md-2">
+                  <label for="cf-name">Your Name</label>
+                  <input type="text" id="cf-name" placeholder="e.g. Rahul Sharma" required />
+                </div>
+                <div class="col-md-6 ps-md-2">
+                  <label for="cf-email">Email / LinkedIn URL</label>
+                  <input type="text" id="cf-email" placeholder="your@email.com or linkedin.com/in/..." required />
+                </div>
+              </div>
+              <label for="cf-company">Company / College</label>
+              <input type="text" id="cf-company" placeholder="e.g. TechStartup Pvt Ltd, IIT Bengaluru" />
+              <label for="cf-service">What do you need?</label>
+              <select id="cf-service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="fractional">Fractional AI Advisor (Retainer)</option>
+                <option value="audit">AI Audit (One-time Review)</option>
+                <option value="strategy">AI Strategy Workshop</option>
+                <option value="poc">Hands-on POC Build</option>
+                <option value="training">Corporate AI Training</option>
+                <option value="talk">Conference Talk / Keynote</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+              <label for="cf-message">Tell me about your challenge</label>
+              <textarea id="cf-message" placeholder="What problem are you solving? What have you tried? Any timeline or budget in mind?" required></textarea>
+              <button type="submit" class="btn btn-primary btn-lg w-100" id="cf-submit">Send Message &rarr;</button>
+            </form>
+
+            <div id="cf-success" style="display:none;" class="text-center mt-4">
+              <div style="font-size:2.5rem; margin-bottom:12px;">&#x2705;</div>
+              <h4>Got it! I'll reply within 24 hours.</h4>
+              <p class="text-secondary">Meanwhile, connect on <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" style="color:var(--primary-teal);">LinkedIn</a> for faster response.</p>
+            </div>
+
+            <div class="text-center mt-4" style="border-top:1px solid var(--border-glass); padding-top:24px;">
+              <p class="text-secondary" style="font-size:0.87rem; margin-bottom:12px;">Prefer to reach out directly?</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:geetakakrani@gmail.com" class="btn btn-secondary btn-sm">
+                  <i class="bi bi-envelope"></i> Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('cf-submit');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('consultingForm').style.display = 'none';
+        document.getElementById('cf-success').style.display = 'block';
+      }, 1200);
+    }
+  </script>
+
+</body>
+</html>

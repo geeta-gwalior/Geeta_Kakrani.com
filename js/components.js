@@ -8,19 +8,19 @@ const NAV_HTML = `
   <div class="nav-inner">
     <a href="../index.html" class="nav-logo" aria-label="Geeta Kakrani Home">
       <span class="nav-logo-name">Geeta Kakrani</span>
-      <span class="nav-logo-title">AI Educator · GDE</span>
+      <span class="nav-logo-title">AI Consultant · GDE</span>
     </a>
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="../pages/about.html">About</a>
-      <a href="../pages/projects.html">Projects</a>
+      <a href="../pages/consulting.html">Consulting</a>
       <a href="../pages/talks.html">Talks</a>
       <a href="../pages/tutorials.html">Tutorials</a>
       <a href="../pages/blog.html">Blog</a>
       <a href="../pages/media.html">Media</a>
     </div>
     <div class="nav-cta">
-      <a href="../index.html#whatsapp-join" class="btn btn-primary btn-sm">Join Community</a>
+      <a href="../pages/consulting.html#contact" class="btn btn-primary btn-sm">Hire Me</a>
     </div>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -30,12 +30,12 @@ const NAV_HTML = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="../index.html">Home</a>
   <a href="../pages/about.html">About</a>
-  <a href="../pages/projects.html">Projects</a>
+  <a href="../pages/consulting.html">Consulting</a>
   <a href="../pages/talks.html">Talks</a>
   <a href="../pages/tutorials.html">Tutorials</a>
   <a href="../pages/blog.html">Blog</a>
   <a href="../pages/media.html">Media</a>
-  <a href="../index.html#whatsapp-join" style="color:var(--primary-teal);font-weight:600;">Join Community →</a>
+  <a href="../pages/consulting.html#contact" style="color:var(--primary-teal);font-weight:600;">Hire Me →</a>
 </nav>
 `;
 
@@ -46,9 +46,9 @@ const FOOTER_HTML = `
       <div class="footer-brand">
         <div>
           <div class="footer-logo-name">Geeta Kakrani</div>
-          <div class="footer-logo-title">AI Educator · GDE · Speaker</div>
+          <div class="footer-logo-title">AI Consultant · GDE · Speaker</div>
         </div>
-        <p>Founder of Kanishka IT. Sharing practical knowledge in AI/ML, coding tutorials, and open-source AI agents. Connect on GitHub, YouTube, LinkedIn, and Medium.</p>
+        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru. 90+ talks. 20+ years in tech.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
@@ -67,6 +67,7 @@ const FOOTER_HTML = `
       <div class="footer-col">
         <h4>Platform</h4>
         <a href="../pages/about.html">About Geeta</a>
+        <a href="../pages/consulting.html">AI Consulting</a>
         <a href="../pages/talks.html">Talks &amp; Workshops</a>
         <a href="https://chat.whatsapp.com/invite/your-whatsapp-link-here" target="_blank" rel="noopener">WhatsApp Group</a>
       </div>
@@ -85,19 +86,19 @@ const NAV_HTML_HOME = `
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" aria-label="Geeta Kakrani Home">
       <span class="nav-logo-name">Geeta Kakrani</span>
-      <span class="nav-logo-title">AI Educator · GDE</span>
+      <span class="nav-logo-title">AI Consultant · GDE</span>
     </a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="pages/about.html">About</a>
-      <a href="pages/projects.html">Projects</a>
+      <a href="pages/consulting.html">Consulting</a>
       <a href="pages/talks.html">Talks</a>
       <a href="pages/tutorials.html">Tutorials</a>
       <a href="pages/blog.html">Blog</a>
       <a href="pages/media.html">Media</a>
     </div>
     <div class="nav-cta">
-      <a href="#whatsapp-join" class="btn btn-primary btn-sm">Join Community</a>
+      <a href="pages/consulting.html#contact" class="btn btn-primary btn-sm">Hire Me</a>
     </div>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -107,12 +108,12 @@ const NAV_HTML_HOME = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="pages/about.html">About</a>
-  <a href="pages/projects.html">Projects</a>
+  <a href="pages/consulting.html">Consulting</a>
   <a href="pages/talks.html">Talks</a>
   <a href="pages/tutorials.html">Tutorials</a>
   <a href="pages/blog.html">Blog</a>
   <a href="pages/media.html">Media</a>
-  <a href="#whatsapp-join" style="color:var(--primary-teal);font-weight:600;">Join Community →</a>
+  <a href="pages/consulting.html#contact" style="color:var(--primary-teal);font-weight:600;">Hire Me →</a>
 </nav>
 `;
 
@@ -123,9 +124,9 @@ const FOOTER_HTML_HOME = `
       <div class="footer-brand">
         <div>
           <div class="footer-logo-name">Geeta Kakrani</div>
-          <div class="footer-logo-title">AI Educator · GDE · Speaker</div>
+          <div class="footer-logo-title">AI Consultant · GDE · Speaker</div>
         </div>
-        <p>Founder of Kanishka IT. Sharing practical knowledge in AI/ML, coding tutorials, and open-source AI agents. Connect on GitHub, YouTube, LinkedIn, and Medium.</p>
+        <p>Google Developer Expert in AI/ML. Available for AI Consulting, Fractional AI Advisory, and AI Audits in Bengaluru. 90+ talks. 20+ years in tech.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/geetakakrani/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/geeta-gwalior" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
@@ -144,6 +145,7 @@ const FOOTER_HTML_HOME = `
       <div class="footer-col">
         <h4>Platform</h4>
         <a href="pages/about.html">About Geeta</a>
+        <a href="pages/consulting.html">AI Consulting</a>
         <a href="pages/talks.html">Talks &amp; Workshops</a>
         <a href="https://chat.whatsapp.com/invite/your-whatsapp-link-here" target="_blank" rel="noopener">WhatsApp Group</a>
       </div>
