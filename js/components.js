@@ -13,9 +13,9 @@ const NAV_HTML = `
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="../pages/about.html">About</a>
-      <a href="../pages/consulting.html">Consulting</a>
-      <a href="../pages/talks.html">Talks</a>
       <a href="../pages/tutorials.html">Tutorials</a>
+      <a href="../pages/talks.html">Talks</a>
+      <a href="../pages/consulting.html">Consulting</a>
       <a href="../pages/blog.html">Blog</a>
       <a href="../pages/media.html">Media</a>
     </div>
@@ -30,9 +30,9 @@ const NAV_HTML = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="../index.html">Home</a>
   <a href="../pages/about.html">About</a>
-  <a href="../pages/consulting.html">Consulting</a>
-  <a href="../pages/talks.html">Talks</a>
   <a href="../pages/tutorials.html">Tutorials</a>
+  <a href="../pages/talks.html">Talks</a>
+  <a href="../pages/consulting.html">Consulting</a>
   <a href="../pages/blog.html">Blog</a>
   <a href="../pages/media.html">Media</a>
   <a href="../pages/consulting.html#contact" style="color:var(--primary-teal);font-weight:600;">Hire Me →</a>
@@ -91,9 +91,9 @@ const NAV_HTML_HOME = `
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="pages/about.html">About</a>
-      <a href="pages/consulting.html">Consulting</a>
-      <a href="pages/talks.html">Talks</a>
       <a href="pages/tutorials.html">Tutorials</a>
+      <a href="pages/talks.html">Talks</a>
+      <a href="pages/consulting.html">Consulting</a>
       <a href="pages/blog.html">Blog</a>
       <a href="pages/media.html">Media</a>
     </div>
@@ -108,9 +108,9 @@ const NAV_HTML_HOME = `
 <nav class="nav-mobile" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="pages/about.html">About</a>
-  <a href="pages/consulting.html">Consulting</a>
-  <a href="pages/talks.html">Talks</a>
   <a href="pages/tutorials.html">Tutorials</a>
+  <a href="pages/talks.html">Talks</a>
+  <a href="pages/consulting.html">Consulting</a>
   <a href="pages/blog.html">Blog</a>
   <a href="pages/media.html">Media</a>
   <a href="pages/consulting.html#contact" style="color:var(--primary-teal);font-weight:600;">Hire Me →</a>
